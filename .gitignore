@@ -1,0 +1,9 @@
+.venv/
+config.yaml
+config.toml
+ekyc_local.db
+__pycache__/
+*.pyc
+logs/
+*.log
+.vscode/

@@ -1,0 +1,52 @@
+================================================================================
+                    E-KYC DATABASE - QUICK SETUP
+================================================================================
+
+STEP 1: Open phpMyAdmin
+   URL: http://localhost/phpmyadmin
+   Login: root / (no password)
+
+STEP 2: Click "SQL" tab
+
+STEP 3: Copy & Paste database_setup.sql content
+
+STEP 4: Click "Go" button
+
+STEP 5: Verify - You should see:
+   ✅ ekyc database
+   ✅ users table (for PAN)
+   ✅ aadhar table (for Aadhar)
+
+================================================================================
+
+HOW TO FIX WRONG DATA:
+
+1. Go to phpMyAdmin > ekyc > aadhar table
+2. Click "Browse"
+3. Find your record (search by Aadhar number)
+4. Click "Edit" (pencil icon)
+5. Change the name/dob/gender
+6. Click "Go"
+7. ✅ DONE! The app will read the corrected data immediately!
+
+================================================================================
+
+QUICK SQL COMMANDS (Copy to SQL tab in phpMyAdmin):
+
+-- Fix a name:
+UPDATE aadhar SET name = 'Suyash Milind Dustkar' WHERE id = '4877 2434 8672';
+
+-- View all records:
+SELECT original_id, name, gender, dob FROM aadhar ORDER BY name;
+
+-- Delete a record:
+DELETE FROM aadhar WHERE id = '4877 2434 8672';
+
+-- Delete ALL records (be careful!):
+DELETE FROM aadhar;
+
+================================================================================
+
+For detailed guide, see: DATABASE_GUIDE.md
+
+================================================================================
