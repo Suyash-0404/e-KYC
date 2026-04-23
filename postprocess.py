@@ -1,6 +1,7 @@
 import pandas as pd
 from datetime import datetime
 import re
+import logging
 
 def filter_lines(lines):
     start_index = None

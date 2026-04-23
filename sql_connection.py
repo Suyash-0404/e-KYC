@@ -48,7 +48,7 @@ try:
     logging.info("Connecting to MySQL...")
     mydb = mysql.connector.connect(
         host=db_host,
-        port=8501,
+        port=3306,
         user=db_user,
         passwd=db_password,
         database=db_name,
@@ -196,7 +196,7 @@ def insert_records(text_info):
         
         # Convert face image to binary
         logging.info("=" * 80)
-        logging.info(f\"{'MySQL' if not use_sqlite else 'SQLite'} INSERT - Processing face_image\")
+        logging.info(f"{'MySQL' if not use_sqlite else 'SQLite'} INSERT - Processing face_image")
         logging.info(f"'face_image' in text_info: {'face_image' in text_info}")
         logging.info(f"text_info['face_image'] is not None: {text_info.get('face_image') is not None}")
         
@@ -211,11 +211,11 @@ def insert_records(text_info):
             
             if ret:
                 face_image_binary = buffer.tobytes()
-                logging.info(f\"Face encoded to JPEG! Size: {len(face_image_binary)} bytes\")
+                logging.info(f"Face encoded to JPEG! Size: {len(face_image_binary)} bytes")
             else:
-                logging.error(\"cv2.imencode FAILED!\")
+                logging.error("cv2.imencode FAILED!")
         else:
-            logging.error(\"NO FACE IMAGE IN text_info OR IT'S NULL!\")
+            logging.error("NO FACE IMAGE IN text_info OR IT'S NULL!")
         
         logging.info(f"face_image_binary is None: {face_image_binary is None}")
         logging.info(f"face_image_binary size: {len(face_image_binary) if face_image_binary else 0} bytes")

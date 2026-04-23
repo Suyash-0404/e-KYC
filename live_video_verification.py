@@ -933,21 +933,24 @@ def main():
         verification_streak = 0
         required_streak = 3  # 3 matches = confirmed
         
+        # SINGLE THRESHOLD - 65% for ALL checks, ALWAYS
+        threshold = 65.0
+        
         # INTELLIGENT TIMING SYSTEM
         import time
         
-        # Phase 1: Initial stabilization (wait before first check)
+        # Phase 1: Initial stabilization (wait before first check) - FASTER
         face_first_detected = None
-        initial_detection_wait = 7.0  # Wait 5-7 seconds after face first detected
+        initial_detection_wait = 3.5  # Reduced from 7.0 to 3.5 seconds - much faster
         
         # Adaptive timing based on lighting/matching quality
-        base_check_interval = 2.5
-        poor_lighting_interval = 2.0  # Speed up in poor conditions
-        good_matching_interval = 3.0  # Slightly slower for normal conditions
+        base_check_interval = 1.5  # Reduced from 2.5 to 1.5 - faster checks
+        poor_lighting_interval = 1.2  # Speed up in poor conditions
+        good_matching_interval = 1.8  # Slightly slower for normal conditions
         
         # Delay after verification before showing result (to avoid looking obvious)
-        fast_match_min_delay = 10.0  # Min 10 sec for very fast/clear matches
-        normal_match_min_delay = 5.0  # Min 5 sec for normal matches
+        fast_match_min_delay = 3.0  # Reduced from 10 to 3 seconds
+        normal_match_min_delay = 2.0  # Reduced from 5 to 2 seconds
         
         last_check_time = time.time() - 10.0  # First check will happen after stabilization
         check_interval = base_check_interval
@@ -955,7 +958,7 @@ def main():
         matched_streak_start_time = None
         quick_match_detected = False
         
-        st.info("Initializing... Wait 5-7 seconds for camera stabilization before verification starts")
+        st.info("Initializing... Wait 3-4 seconds for camera stabilization before verification starts")
         
         # CONTINUOUS mode - don't stop on first verification!
         while cap.isOpened() and not stop_button:
@@ -1027,7 +1030,7 @@ def main():
                 time_remain = initial_detection_wait - (current_time - face_first_detected)
                 countdown_display.info(f"Camera stabilizing... **{time_remain:.1f}s** until verification starts")
             elif verification_confirmed_time is None and time_until_check > 0:
-                countdown_display.info(f"Next check: **{time_until_check:.1f}s** | Checking every {check_interval:.1f}s")
+                countdown_display.info(f"Next check: **{time_until_check:.1f}s** | Check {verification_streak + 1}/3")
             elif verification_confirmed_time is not None:
                 time_since_confirmed = current_time - verification_confirmed_time
                 countdown_display.success(f"Verified! Processing... **{time_since_confirmed:.1f}s**")
@@ -1047,20 +1050,24 @@ def main():
                 # ANALYZE FRAME
                 result_text, frame_verified, match_percentage = analyze_frame(frame_rgb, db_details, option, reader)
                 
+                # SINGLE THRESHOLD: 65% ONLY
+                frame_verified_fixed = (match_percentage >= threshold)
+                
                 # ALWAYS SHOW PERCENTAGE AND PROGRESS
-                if match_percentage >= 65:
-                    percentage_display.success(f"**Match Score: {match_percentage:.1f}%** ")
-                elif match_percentage >= 30:
+                if match_percentage >= threshold:
+                    percentage_display.success(f"**Match Score: {match_percentage:.1f}%** (✓ Passes 65% threshold)")
+                elif match_percentage >= 45:
                     percentage_display.info(f"**Match Score: {match_percentage:.1f}%** (need 65%+)")
                 else:
-                    percentage_display.warning(f"**Match Score: {match_percentage:.1f}%** (too low)")
+                    percentage_display.warning(f"**Match Score: {match_percentage:.1f}%** (too low - need 65%+)")
                 
                 # Ensure progress value is always 0-100 (never negative)
                 progress_value = max(0, min(100, int(match_percentage)))
                 progress_bar.progress(progress_value)
                 
-                # Show result
-                if frame_verified:
+                # Show result - ONCE AT 1/3, KEEP STREAK NO MATTER WHAT
+                if frame_verified_fixed:
+                    # SUCCESS - increment streak
                     if verification_streak == 0:
                         matched_streak_start_time = current_time
                         if match_percentage >= 85:
@@ -1068,18 +1075,20 @@ def main():
                             logging.info("RAPID MATCH DETECTED - Very clear match!")
                     
                     verification_streak += 1
-                    result_box.success(f"{result_text} | Streak: {verification_streak}/{required_streak} ")
+                    result_box.success(f"{result_text} | ✓ Check {verification_streak}/{required_streak} Passed!")
+                    logging.info(f"✓ Verification streak: {verification_streak}/{required_streak} (threshold: 65%)")
                     
                     if verification_streak >= required_streak:
+                        # ALL 3 CHECKS PASSED!
                         verification_confirmed_time = current_time
-                        result_box.success(f"CONFIRMED! {result_text}")
-                        percentage_display.success(f"**Final Score: {match_percentage:.1f}%** ")
+                        result_box.success(f"🎉 ALL CHECKS PASSED! {result_text}")
+                        percentage_display.success(f"**Final Score: {match_percentage:.1f}%** ALL VERIFIED!")
                         
                         # NEW: Calculate required delay based on match quality
                         if quick_match_detected:
-                            min_delay = fast_match_min_delay  # 10 seconds for obvious matches
+                            min_delay = fast_match_min_delay  # 3 seconds for obvious matches
                         else:
-                            min_delay = normal_match_min_delay  # 5 seconds for normal matches
+                            min_delay = normal_match_min_delay  # 2 seconds for normal matches
                         
                         # Wait minimum delay to avoid suspicious rapid verification
                         time_elapsed_since_verified = 0
@@ -1123,11 +1132,26 @@ def main():
                         verified = True
                         break
                 else:
-                    verification_streak = 0
-                    quick_match_detected = False
-                    matched_streak_start_time = None
-                    result_box.error(f"{result_text} | Try again...")
-                    countdown_display.info(f"Hold steady - improving detection in {poor_lighting and 'low light' or 'normal'} conditions")
+                    # FAILURE - But ONCE AT 1/3, STREAK STAYS PROTECTED
+                    if verification_streak >= 1:
+                        # STREAK IS PROTECTED - NEVER LOSE IT
+                        # Only reset if screen goes pitch black (extreme darkness)
+                        if poor_lighting and avg_brightness < 20:
+                            # PITCH BLACK - reset
+                            verification_streak = 0
+                            quick_match_detected = False
+                            matched_streak_start_time = None
+                            result_box.error(f"Screen too dark! Streak reset (Match: {match_percentage:.1f}%)")
+                            logging.info(f"⚠️ PITCH BLACK detected (brightness: {avg_brightness:.1f}) - Streak RESET")
+                        else:
+                            # Keep the streak, just show message
+                            result_box.warning(f"Mismatch ({match_percentage:.1f}%) | Streak PROTECTED at {verification_streak}/{required_streak} - Hold steady!")
+                            logging.info(f"⚠️ Mismatch but streak {verification_streak}/{required_streak} PROTECTED (match: {match_percentage:.1f}%)")
+                    else:
+                        # No streak yet, just failed - stay at 0
+                        result_box.error(f"Mismatch ({match_percentage:.1f}%) | Try again from 0/3")
+                        logging.info(f"❌ Failed before reaching 1/3 (match: {match_percentage:.1f}%)")
+                        countdown_display.info(f"Hold steady - improving detection. Current progress: 0/3")
         
         cap.release()
         
