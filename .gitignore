@@ -1,9 +1,1 @@
-.venv/
-config.yaml
-config.toml
-ekyc_local.db
-__pycache__/
-*.pyc
-logs/
-*.log
-.vscode/
+__pycache__/\n*.pyc\n.venv/\n.env\nlogs/\n*.db\n*.log\n.pytest_cache/\n.coverage\ndata/02_intermediate_data/

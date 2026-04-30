@@ -82,10 +82,10 @@ pip install -r requirements.txt
 
 ```yaml
 database:
-  user: your_username
-  password: your_password
-  host: localhost
-  database: your_database_name
+ user: your_username
+ password: your_password
+ host: localhost
+ database: your_database_name
 ```
 
 5. Make sure MySQL is running if you want to use the main database.

@@ -1,0 +1,891 @@
+[2026-04-28 10:30:56,866: INFO: utils]: Loaded YAML: config.yaml
+[2026-04-28 10:31:04,094: WARNING: easyocr]: Using CPU. Note: This module is much faster with a GPU.
+[2026-04-28 10:31:09,216: WARNING: easyocr]: Using CPU. Note: This module is much faster with a GPU.
+[2026-04-28 10:31:33,481: INFO: utils]: Loaded YAML: config.yaml
+[2026-04-28 10:31:33,596: INFO: sql_connection]: Connecting to MySQL...
+[2026-04-28 10:31:33,895: INFO: sql_connection]: MySQL connection successful (XAMPP)
+[2026-04-28 10:31:33,903: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:31:33,992: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:31:33,992: INFO: app]: Custom theme applied.
+[2026-04-28 10:31:33,993: INFO: app]: Selected: PAN
+[2026-04-28 10:35:45,418: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:35:45,461: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:35:45,462: INFO: app]: Custom theme applied.
+[2026-04-28 10:35:45,478: INFO: app]: Selected: AADHAR
+[2026-04-28 10:35:50,861: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:35:50,960: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:35:50,962: INFO: app]: Custom theme applied.
+[2026-04-28 10:35:50,966: INFO: app]: Selected: AADHAR
+[2026-04-28 10:35:56,709: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:35:56,711: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:35:56,712: INFO: app]: Custom theme applied.
+[2026-04-28 10:35:56,718: INFO: app]: Selected: AADHAR
+[2026-04-28 10:35:56,784: INFO: app]: Face image loaded.
+[2026-04-28 10:35:56,830: INFO: app]: ID card image loaded.
+[2026-04-28 10:35:56,880: INFO: preprocess]: contours are found at, (77, 421, 576, 1035)
+[2026-04-28 10:35:56,881: INFO: utils]: File not found: /Users/apple/Downloads/ekyc sssss/data\02_intermediate_data/contour_id.jpg
+[2026-04-28 10:35:56,882: INFO: app]: ID card ROI extracted.
+[2026-04-28 10:35:56,882: INFO: face_verification]: Extracting face
+[2026-04-28 10:35:56,883: INFO: face_verification]: Loading cascade from: /Users/apple/Downloads/ekyc sssss/data/models/haarcascade_frontalface_default.xml
+[2026-04-28 10:35:56,914: INFO: face_verification]: Loaded cascade successfully
+[2026-04-28 10:35:57,508: INFO: face_verification]: Face saved: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:35:57,513: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:35:57,522: INFO: preprocess]: Image saved successfully: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:35:57,522: INFO: app]: Faces extracted and saved.
+[2026-04-28 10:35:57,522: INFO: face_verification]: Verifying the images....
+[2026-04-28 10:35:57,522: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:35:57,522: INFO: utils]: File exists: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:35:57,522: INFO: face_verification]: Attempting DeepFace.verify with detector_backend='opencv'
+[2026-04-28 10:36:05,747: INFO: face_verification]: DeepFace result (opencv): {'verified': True, 'distance': 0.5554719272530497, 'threshold': 0.68, 'model': 'VGG-Face', 'detector_backend': 'opencv', 'similarity_metric': 'cosine', 'facial_areas': {'img1': {'x': 190, 'y': 154, 'w': 472, 'h': 472, 'left_eye': (508, 341), 'right_eye': (334, 337)}, 'img2': {'x': 17, 'y': 16, 'w': 66, 'h': 66, 'left_eye': None, 'right_eye': None}}, 'time': 8.22}
+[2026-04-28 10:36:05,748: INFO: face_verification]: Faces are verified as the same person
+[2026-04-28 10:36:05,748: INFO: app]: Face verification status: successful.
+[2026-04-28 10:36:05,748: INFO: ocr_engine]: Using INTELLIGENT AADHAR CARD PARSER...
+[2026-04-28 10:36:05,748: INFO: aadhar_intelligent_ocr]: Starting INTELLIGENT AADHAR parsing...
+[2026-04-28 10:36:05,748: INFO: aadhar_intelligent_ocr]: Preprocessing Aadhar card...
+[2026-04-28 10:36:10,692: INFO: aadhar_intelligent_ocr]: Preprocessing complete: (3234, 1800)
+[2026-04-28 10:36:10,732: INFO: aadhar_intelligent_ocr]: Extracting text with layout analysis...
+[2026-04-28 10:36:10,732: INFO: aadhar_intelligent_ocr]: Running Tesseract...
+[2026-04-28 10:36:12,462: INFO: aadhar_intelligent_ocr]: Tesseract: 48 text elements
+[2026-04-28 10:36:12,462: INFO: aadhar_intelligent_ocr]: 🌏 Running EasyOCR with layout analysis...
+[2026-04-28 10:36:12,463: WARNING: easyocr]: Using CPU. Note: This module is much faster with a GPU.
+[2026-04-28 10:36:32,360: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:36:32,371: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:36:32,372: INFO: app]: Custom theme applied.
+[2026-04-28 10:36:32,378: INFO: app]: Selected: PAN
+[2026-04-28 10:36:32,472: INFO: app]: Face image loaded.
+[2026-04-28 10:36:32,509: INFO: app]: ID card image loaded.
+[2026-04-28 10:36:32,529: INFO: preprocess]: contours are found at, (77, 421, 576, 1035)
+[2026-04-28 10:36:32,530: INFO: utils]: File not found: /Users/apple/Downloads/ekyc sssss/data\02_intermediate_data/contour_id.jpg
+[2026-04-28 10:36:32,532: INFO: app]: ID card ROI extracted.
+[2026-04-28 10:36:32,532: INFO: face_verification]: Extracting face
+[2026-04-28 10:36:32,533: INFO: face_verification]: Loading cascade from: /Users/apple/Downloads/ekyc sssss/data/models/haarcascade_frontalface_default.xml
+[2026-04-28 10:36:32,577: INFO: face_verification]: Loaded cascade successfully
+[2026-04-28 10:36:32,912: INFO: face_verification]: Face saved: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:36:32,920: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:36:32,931: INFO: preprocess]: Image saved successfully: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:36:32,931: INFO: app]: Faces extracted and saved.
+[2026-04-28 10:36:32,931: INFO: face_verification]: Verifying the images....
+[2026-04-28 10:36:32,931: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:36:32,931: INFO: utils]: File exists: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:36:32,932: INFO: face_verification]: Attempting DeepFace.verify with detector_backend='opencv'
+[2026-04-28 10:36:36,037: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:36:36,052: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:36:36,063: INFO: app]: Custom theme applied.
+[2026-04-28 10:36:36,069: INFO: face_verification]: DeepFace result (opencv): {'verified': True, 'distance': 0.5554719272530497, 'threshold': 0.68, 'model': 'VGG-Face', 'detector_backend': 'opencv', 'similarity_metric': 'cosine', 'facial_areas': {'img1': {'x': 190, 'y': 154, 'w': 472, 'h': 472, 'left_eye': (508, 341), 'right_eye': (334, 337)}, 'img2': {'x': 17, 'y': 16, 'w': 66, 'h': 66, 'left_eye': None, 'right_eye': None}}, 'time': 3.14}
+[2026-04-28 10:36:36,075: INFO: face_verification]: Faces are verified as the same person
+[2026-04-28 10:36:36,075: INFO: app]: Face verification status: successful.
+[2026-04-28 10:36:36,086: INFO: ocr_engine]: Using INTELLIGENT PAN CARD PARSER...
+[2026-04-28 10:36:36,086: INFO: pan_intelligent_ocr]: 🔧 Preprocessing PAN card...
+[2026-04-28 10:36:36,086: INFO: pan_intelligent_ocr]: Original shape: (1035, 576, 3)
+[2026-04-28 10:36:36,075: INFO: app]: Selected: PAN
+[2026-04-28 10:36:38,575: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:36:38,577: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:36:38,578: INFO: app]: Custom theme applied.
+[2026-04-28 10:36:38,580: INFO: app]: Selected: PAN
+[2026-04-28 10:36:40,893: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:36:40,895: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:36:40,896: INFO: app]: Custom theme applied.
+[2026-04-28 10:36:40,902: INFO: app]: Selected: PAN
+[2026-04-28 10:36:49,456: INFO: pan_intelligent_ocr]: PAN preprocessing complete: (3234, 1800)
+[2026-04-28 10:36:49,545: INFO: pan_intelligent_ocr]: Saved: data/02_intermediate_data/pan_preprocessed_debug.jpg
+[2026-04-28 10:36:49,545: INFO: pan_intelligent_ocr]: 📖 Extracting text with layout analysis...
+[2026-04-28 10:36:49,546: INFO: pan_intelligent_ocr]: 🔤 Running Tesseract with layout analysis...
+[2026-04-28 10:36:52,160: INFO: pan_intelligent_ocr]: Tesseract: 6 text elements
+[2026-04-28 10:36:52,160: INFO: pan_intelligent_ocr]: 🌏 Running EasyOCR with layout analysis...
+[2026-04-28 10:39:49,343: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:39:49,355: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:39:49,356: INFO: app]: Custom theme applied.
+[2026-04-28 10:39:49,360: INFO: app]: Selected: PAN
+[2026-04-28 10:39:55,271: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:39:55,276: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:39:55,279: INFO: app]: Custom theme applied.
+[2026-04-28 10:39:55,282: INFO: app]: Selected: PAN
+[2026-04-28 10:39:55,289: INFO: app]: Face image loaded.
+[2026-04-28 10:39:55,313: INFO: app]: ID card image loaded.
+[2026-04-28 10:39:55,329: INFO: preprocess]: contours are found at, (0, 0, 983, 616)
+[2026-04-28 10:39:55,330: INFO: utils]: File not found: /Users/apple/Downloads/ekyc sssss/data\02_intermediate_data/contour_id.jpg
+[2026-04-28 10:39:55,346: INFO: app]: ID card ROI extracted.
+[2026-04-28 10:39:55,347: INFO: face_verification]: Extracting face
+[2026-04-28 10:39:55,347: INFO: face_verification]: Loading cascade from: /Users/apple/Downloads/ekyc sssss/data/models/haarcascade_frontalface_default.xml
+[2026-04-28 10:39:55,424: INFO: face_verification]: Loaded cascade successfully
+[2026-04-28 10:39:55,960: INFO: face_verification]: Face saved: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:39:55,965: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:39:55,967: INFO: preprocess]: Image saved successfully: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:39:55,967: INFO: app]: Faces extracted and saved.
+[2026-04-28 10:39:55,968: INFO: face_verification]: Verifying the images....
+[2026-04-28 10:39:55,968: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:39:55,968: INFO: utils]: File exists: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:39:55,969: INFO: face_verification]: Attempting DeepFace.verify with detector_backend='opencv'
+[2026-04-28 10:39:59,581: INFO: face_verification]: DeepFace result (opencv): {'verified': True, 'distance': 0.44480999586403636, 'threshold': 0.68, 'model': 'VGG-Face', 'detector_backend': 'opencv', 'similarity_metric': 'cosine', 'facial_areas': {'img1': {'x': 56, 'y': 98, 'w': 173, 'h': 173, 'left_eye': None, 'right_eye': None}, 'img2': {'x': 27, 'y': 26, 'w': 105, 'h': 105, 'left_eye': (100, 66), 'right_eye': (52, 69)}}, 'time': 3.61}
+[2026-04-28 10:39:59,581: INFO: face_verification]: Faces are verified as the same person
+[2026-04-28 10:39:59,582: INFO: app]: Face verification status: successful.
+[2026-04-28 10:39:59,582: INFO: ocr_engine]: Using INTELLIGENT PAN CARD PARSER...
+[2026-04-28 10:39:59,582: INFO: pan_intelligent_ocr]: 🔧 Preprocessing PAN card...
+[2026-04-28 10:39:59,582: INFO: pan_intelligent_ocr]: Original shape: (616, 983, 3)
+[2026-04-28 10:40:04,054: INFO: pan_intelligent_ocr]: PAN preprocessing complete: (1127, 1800)
+[2026-04-28 10:40:04,115: INFO: pan_intelligent_ocr]: Saved: data/02_intermediate_data/pan_preprocessed_debug.jpg
+[2026-04-28 10:40:04,116: INFO: pan_intelligent_ocr]: 📖 Extracting text with layout analysis...
+[2026-04-28 10:40:04,116: INFO: pan_intelligent_ocr]: 🔤 Running Tesseract with layout analysis...
+[2026-04-28 10:40:07,796: INFO: pan_intelligent_ocr]: Tesseract: 1 text elements
+[2026-04-28 10:40:07,797: INFO: pan_intelligent_ocr]: 🌏 Running EasyOCR with layout analysis...
+[2026-04-28 10:41:21,759: INFO: pan_intelligent_ocr]: EasyOCR: 21 text elements
+[2026-04-28 10:41:21,762: INFO: pan_intelligent_ocr]: Total text elements: 22
+[2026-04-28 10:41:21,762: INFO: pan_intelligent_ocr]: Starting INTELLIGENT PAN parsing...
+[2026-04-28 10:41:21,765: INFO: pan_intelligent_ocr]: NAME CANDIDATE: Permanent Account Number Card (conf: 0.92, y: 384)
+[2026-04-28 10:41:21,766: INFO: pan_intelligent_ocr]: PAN CANDIDATE: IWRPD8134D (conf: 0.98, score: 118.3, pos: 600,436)
+[2026-04-28 10:41:21,766: INFO: pan_intelligent_ocr]: NAME CANDIDATE: Name (conf: 0.85, y: 639)
+[2026-04-28 10:41:21,766: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: SUYASH MILIND DUSTAKAR (conf: 0.88, y: 677)
+[2026-04-28 10:41:21,766: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: Father's Name (conf: 0.68, y: 787)
+[2026-04-28 10:41:21,766: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: MILIND GOVIND DUSTAKAR (conf: 0.67, y: 829)
+[2026-04-28 10:41:21,767: INFO: pan_intelligent_ocr]: 📅 DOB CANDIDATE: 04/04/2005 (conf: 0.78)
+[2026-04-28 10:41:21,767: INFO: pan_intelligent_ocr]: SELECTED PAN: IWRPD8134D
+[2026-04-28 10:41:21,767: INFO: pan_intelligent_ocr]: SELECTED DOB: 04/04/2005
+[2026-04-28 10:41:21,767: INFO: pan_intelligent_ocr]: SELECTED NAME: PERMANENT ACCOUNT NUMBER CARD
+[2026-04-28 10:41:21,767: INFO: pan_intelligent_ocr]: SELECTED FATHER: SUYASH MILIND DUSTAKAR
+[2026-04-28 10:41:21,767: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 10:41:21,767: INFO: pan_intelligent_ocr]: INTELLIGENT EXTRACTION COMPLETE:
+[2026-04-28 10:41:21,767: INFO: pan_intelligent_ocr]:    PAN: IWRPD8134D
+[2026-04-28 10:41:21,767: INFO: pan_intelligent_ocr]:    Name: PERMANENT ACCOUNT NUMBER CARD
+[2026-04-28 10:41:21,768: INFO: pan_intelligent_ocr]:    Father: SUYASH MILIND DUSTAKAR
+[2026-04-28 10:41:21,768: INFO: pan_intelligent_ocr]:    DOB: 04/04/2005
+[2026-04-28 10:41:21,768: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 10:41:21,768: INFO: ocr_engine]: 📄 INTELLIGENT RESULT: PAN: IWRPD8134D | Name: PERMANENT ACCOUNT NUMBER CARD | Father: SUYASH MILIND DUSTAKAR | DOB: 04/04/2005 | 4 | 310er | {@aT | "HRT | rrezr | INCOME TAX DEPARTMENT | GOVT OF INDIA | TeTT (t TCHT *Tef | Permanent Account Number Card | IWRPD8134D | TT | Name | SUYASH MILIND DUSTAKAR | fuT ZT TTh | Fath...
+[2026-04-28 10:41:21,769: INFO: postprocess]: Extracting PAN information
+[2026-04-28 10:41:21,816: INFO: app]: Text extracted and information parsed from ID card.
+[2026-04-28 10:41:21,817: INFO: app]: PARSED INFO - Name: Suyash Milind Dustakar, ID: IWRPD8134D
+[2026-04-28 10:41:21,817: INFO: app]: PAN ID hashed: IWRPD8134D -> 4ca121ee680a5e2be0c0a33e53d11066e6c446c3e97aabd55385d49ff075171a
+[2026-04-28 10:41:21,869: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 10:41:21,870: INFO: sql_connection]: Duplicate records found.
+[2026-04-28 10:41:21,880: INFO: app]: Duplicate user found: IWRPD8134D
+[2026-04-28 10:41:21,889: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 10:41:30,798: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:41:30,801: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:41:30,802: INFO: app]: Custom theme applied.
+[2026-04-28 10:41:30,806: INFO: app]: Selected: PAN
+[2026-04-28 10:41:30,813: INFO: app]: Face image loaded.
+[2026-04-28 10:41:30,917: INFO: app]: ID card image loaded.
+[2026-04-28 10:41:30,927: INFO: preprocess]: contours are found at, (0, 0, 983, 616)
+[2026-04-28 10:41:30,928: INFO: utils]: File not found: /Users/apple/Downloads/ekyc sssss/data\02_intermediate_data/contour_id.jpg
+[2026-04-28 10:41:30,929: INFO: app]: ID card ROI extracted.
+[2026-04-28 10:41:30,929: INFO: face_verification]: Extracting face
+[2026-04-28 10:41:30,929: INFO: face_verification]: Loading cascade from: /Users/apple/Downloads/ekyc sssss/data/models/haarcascade_frontalface_default.xml
+[2026-04-28 10:41:30,986: INFO: face_verification]: Loaded cascade successfully
+[2026-04-28 10:41:31,537: INFO: face_verification]: Face saved: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:41:31,546: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:41:31,549: INFO: preprocess]: Image saved successfully: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:41:31,549: INFO: app]: Faces extracted and saved.
+[2026-04-28 10:41:31,549: INFO: face_verification]: Verifying the images....
+[2026-04-28 10:41:31,550: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:41:31,550: INFO: utils]: File exists: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:41:31,550: INFO: face_verification]: Attempting DeepFace.verify with detector_backend='opencv'
+[2026-04-28 10:41:34,863: INFO: pan_intelligent_ocr]: EasyOCR: 41 text elements
+[2026-04-28 10:41:34,864: INFO: pan_intelligent_ocr]: Total text elements: 47
+[2026-04-28 10:41:34,864: INFO: pan_intelligent_ocr]: Starting INTELLIGENT PAN parsing...
+[2026-04-28 10:41:34,864: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: Mmankorudia (conf: 0.22, y: 2255)
+[2026-04-28 10:41:34,865: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: Anwik Vinod Kadam (conf: 0.86, y: 2452)
+[2026-04-28 10:41:34,865: INFO: pan_intelligent_ocr]: 📅 DOB CANDIDATE: 21/10/2004 (conf: 0.41)
+[2026-04-28 10:41:34,865: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: gad/ MALE (conf: 0.26, y: 2574)
+[2026-04-28 10:41:34,865: INFO: pan_intelligent_ocr]: SELECTED DOB: 21/10/2004
+[2026-04-28 10:41:34,865: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 10:41:34,865: INFO: pan_intelligent_ocr]: INTELLIGENT EXTRACTION COMPLETE:
+[2026-04-28 10:41:34,865: INFO: pan_intelligent_ocr]:    PAN: None
+[2026-04-28 10:41:34,866: INFO: pan_intelligent_ocr]:    Name: None
+[2026-04-28 10:41:34,866: INFO: pan_intelligent_ocr]:    Father: None
+[2026-04-28 10:41:34,866: INFO: pan_intelligent_ocr]:    DOB: 21/10/2004
+[2026-04-28 10:41:34,866: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 10:41:34,867: INFO: ocr_engine]: 📄 INTELLIGENT RESULT: DOB: 21/10/2004 | 44205/06055 | 9136505186 | RR | 0 | 3 | 6 | Ilao | Ui | UXAUSu } = | J1 | airuflt 7iap:| Enrolment No: 2722/44205/06055 | To | &fdd @7iq @Q1 | Anwik Vinod Kadam | 65-8/21 new Brindavan darshan Co-Op HSG Society | Bindavan complex | Majiwada | Thane | Thane Maharashba | 400601 | 913...
+[2026-04-28 10:41:34,867: INFO: postprocess]: Extracting PAN information
+[2026-04-28 10:41:34,893: INFO: app]: Text extracted and information parsed from ID card.
+[2026-04-28 10:41:34,893: INFO: app]: PARSED INFO - Name: , ID: DOBZI1020O
+[2026-04-28 10:41:34,893: INFO: app]: PAN ID hashed: DOBZI1020O -> a4b103a92d6ed65744c267a987f880d15a41133950ba4e0f837cb4c16db83342
+[2026-04-28 10:41:34,943: INFO: sql_connection]: No records found for any candidate values.
+[2026-04-28 10:41:34,946: INFO: sql_connection]: No duplicate records found.
+[2026-04-28 10:41:35,835: INFO: face_verification]: DeepFace result (opencv): {'verified': True, 'distance': 0.44480999586403636, 'threshold': 0.68, 'model': 'VGG-Face', 'detector_backend': 'opencv', 'similarity_metric': 'cosine', 'facial_areas': {'img1': {'x': 56, 'y': 98, 'w': 173, 'h': 173, 'left_eye': None, 'right_eye': None}, 'img2': {'x': 27, 'y': 26, 'w': 105, 'h': 105, 'left_eye': (100, 66), 'right_eye': (52, 69)}}, 'time': 4.28}
+[2026-04-28 10:41:35,835: INFO: face_verification]: Faces are verified as the same person
+[2026-04-28 10:41:35,835: INFO: app]: Face verification status: successful.
+[2026-04-28 10:41:35,835: INFO: ocr_engine]: Using INTELLIGENT PAN CARD PARSER...
+[2026-04-28 10:41:35,835: INFO: pan_intelligent_ocr]: 🔧 Preprocessing PAN card...
+[2026-04-28 10:41:35,835: INFO: pan_intelligent_ocr]: Original shape: (616, 983, 3)
+[2026-04-28 10:41:38,332: INFO: pan_intelligent_ocr]: PAN preprocessing complete: (1127, 1800)
+[2026-04-28 10:41:38,358: INFO: pan_intelligent_ocr]: Saved: data/02_intermediate_data/pan_preprocessed_debug.jpg
+[2026-04-28 10:41:38,358: INFO: pan_intelligent_ocr]: 📖 Extracting text with layout analysis...
+[2026-04-28 10:41:38,359: INFO: pan_intelligent_ocr]: 🔤 Running Tesseract with layout analysis...
+[2026-04-28 10:41:39,889: INFO: pan_intelligent_ocr]: Tesseract: 1 text elements
+[2026-04-28 10:41:39,889: INFO: pan_intelligent_ocr]: 🌏 Running EasyOCR with layout analysis...
+[2026-04-28 10:42:13,618: INFO: aadhar_intelligent_ocr]: EasyOCR: 42 text elements
+[2026-04-28 10:42:13,619: INFO: aadhar_intelligent_ocr]: Total text elements: 90
+[2026-04-28 10:42:13,696: INFO: aadhar_intelligent_ocr]: 🔢 AADHAR CANDIDATE: 911875571849 (conf: 0.00)
+[2026-04-28 10:42:13,697: INFO: aadhar_intelligent_ocr]: 🔢 AADHAR CANDIDATE: 911875571849 (conf: 0.23)
+[2026-04-28 10:42:13,697: INFO: aadhar_intelligent_ocr]: SELECTED AADHAR: 911875571849
+[2026-04-28 10:42:13,697: INFO: aadhar_intelligent_ocr]: ⚥ GENDER: Male (from: पुरुष / MALE)
+[2026-04-28 10:42:13,698: INFO: aadhar_intelligent_ocr]: ================================================================================
+[2026-04-28 10:42:13,698: INFO: aadhar_intelligent_ocr]: INTELLIGENT AADHAR EXTRACTION COMPLETE:
+[2026-04-28 10:42:13,698: INFO: aadhar_intelligent_ocr]:    Aadhar: 911875571849
+[2026-04-28 10:42:13,698: INFO: aadhar_intelligent_ocr]:    Name: None
+[2026-04-28 10:42:13,698: INFO: aadhar_intelligent_ocr]:    DOB: None
+[2026-04-28 10:42:13,698: INFO: aadhar_intelligent_ocr]:    Gender: Male
+[2026-04-28 10:42:13,698: INFO: aadhar_intelligent_ocr]: ================================================================================
+[2026-04-28 10:42:13,701: INFO: ocr_engine]: 📄 INTELLIGENT AADHAR RESULT: 911875571849 | Aadhar: 911875571849 | Gender: Male
+[2026-04-28 10:42:13,707: INFO: app]: Text extracted and information parsed from ID card.
+[2026-04-28 10:42:13,708: INFO: app]: PARSED INFO - Name: , ID: 9118 7557 1849
+[2026-04-28 10:42:13,708: INFO: app]: AADHAR ID (unhashed): 9118 7557 1849
+[2026-04-28 10:42:13,708: INFO: sql_connection]: Trying Aadhaar candidate: '9118 7557 1849'
+[2026-04-28 10:42:13,714: INFO: sql_connection]: ✓ Fetched records successfully from MySQL aadhar table using candidate '9118 7557 1849'.
+[2026-04-28 10:42:13,714: INFO: sql_connection]: Duplicate records found.
+[2026-04-28 10:42:18,638: INFO: pan_intelligent_ocr]: EasyOCR: 21 text elements
+[2026-04-28 10:42:18,638: INFO: pan_intelligent_ocr]: Total text elements: 22
+[2026-04-28 10:42:18,638: INFO: pan_intelligent_ocr]: Starting INTELLIGENT PAN parsing...
+[2026-04-28 10:42:18,638: INFO: pan_intelligent_ocr]: NAME CANDIDATE: Permanent Account Number Card (conf: 0.92, y: 384)
+[2026-04-28 10:42:18,638: INFO: pan_intelligent_ocr]: PAN CANDIDATE: IWRPD8134D (conf: 0.98, score: 118.3, pos: 600,436)
+[2026-04-28 10:42:18,638: INFO: pan_intelligent_ocr]: NAME CANDIDATE: Name (conf: 0.85, y: 639)
+[2026-04-28 10:42:18,638: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: SUYASH MILIND DUSTAKAR (conf: 0.88, y: 677)
+[2026-04-28 10:42:18,638: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: Father's Name (conf: 0.68, y: 787)
+[2026-04-28 10:42:18,639: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: MILIND GOVIND DUSTAKAR (conf: 0.67, y: 829)
+[2026-04-28 10:42:18,639: INFO: pan_intelligent_ocr]: 📅 DOB CANDIDATE: 04/04/2005 (conf: 0.78)
+[2026-04-28 10:42:18,639: INFO: pan_intelligent_ocr]: SELECTED PAN: IWRPD8134D
+[2026-04-28 10:42:18,639: INFO: pan_intelligent_ocr]: SELECTED DOB: 04/04/2005
+[2026-04-28 10:42:18,639: INFO: pan_intelligent_ocr]: SELECTED NAME: PERMANENT ACCOUNT NUMBER CARD
+[2026-04-28 10:42:18,639: INFO: pan_intelligent_ocr]: SELECTED FATHER: SUYASH MILIND DUSTAKAR
+[2026-04-28 10:42:18,639: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 10:42:18,639: INFO: pan_intelligent_ocr]: INTELLIGENT EXTRACTION COMPLETE:
+[2026-04-28 10:42:18,640: INFO: pan_intelligent_ocr]:    PAN: IWRPD8134D
+[2026-04-28 10:42:18,640: INFO: pan_intelligent_ocr]:    Name: PERMANENT ACCOUNT NUMBER CARD
+[2026-04-28 10:42:18,640: INFO: pan_intelligent_ocr]:    Father: SUYASH MILIND DUSTAKAR
+[2026-04-28 10:42:18,640: INFO: pan_intelligent_ocr]:    DOB: 04/04/2005
+[2026-04-28 10:42:18,640: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 10:42:18,640: INFO: ocr_engine]: 📄 INTELLIGENT RESULT: PAN: IWRPD8134D | Name: PERMANENT ACCOUNT NUMBER CARD | Father: SUYASH MILIND DUSTAKAR | DOB: 04/04/2005 | 4 | 310er | {@aT | "HRT | rrezr | INCOME TAX DEPARTMENT | GOVT OF INDIA | TeTT (t TCHT *Tef | Permanent Account Number Card | IWRPD8134D | TT | Name | SUYASH MILIND DUSTAKAR | fuT ZT TTh | Fath...
+[2026-04-28 10:42:18,640: INFO: postprocess]: Extracting PAN information
+[2026-04-28 10:42:18,644: INFO: app]: Text extracted and information parsed from ID card.
+[2026-04-28 10:42:18,644: INFO: app]: PARSED INFO - Name: Suyash Milind Dustakar, ID: IWRPD8134D
+[2026-04-28 10:42:18,644: INFO: app]: PAN ID hashed: IWRPD8134D -> 4ca121ee680a5e2be0c0a33e53d11066e6c446c3e97aabd55385d49ff075171a
+[2026-04-28 10:42:18,646: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 10:42:18,646: INFO: sql_connection]: Duplicate records found.
+[2026-04-28 10:42:18,647: INFO: app]: Duplicate user found: IWRPD8134D
+[2026-04-28 10:42:18,649: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 10:42:18,838: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:42:18,841: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:42:18,843: INFO: app]: Custom theme applied.
+[2026-04-28 10:42:25,401: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:42:25,442: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:42:25,445: INFO: app]: Custom theme applied.
+[2026-04-28 10:42:28,133: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:42:28,135: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:42:28,135: INFO: app]: Custom theme applied.
+[2026-04-28 10:42:28,439: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:42:28,442: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:42:28,443: INFO: app]: Custom theme applied.
+[2026-04-28 10:42:32,618: INFO: live_video_verification]: Fetching PAN details for ID: IWRPD8134D
+[2026-04-28 10:42:32,622: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 10:42:32,622: INFO: live_video_verification]: Candidate 'IWRPD8134D' returned 1 records
+[2026-04-28 10:42:32,623: INFO: live_video_verification]: ✓ User found: Suyash Milind Dustakar
+[2026-04-28 10:42:32,623: INFO: live_video_verification]: DB details fetched for: IWRPD8134D
+[2026-04-28 10:42:32,623: INFO: live_video_verification]: DB details keys: ['id', 'original_id', 'name', 'father_name', 'dob', 'id_type', 'embedding', 'face_image']
+[2026-04-28 10:42:32,624: INFO: live_video_verification]:   - id: 4ca121ee680a5e2be0c0a33e53d11066e6c446c3e97aabd55385d49ff075171a
+[2026-04-28 10:42:32,624: INFO: live_video_verification]:   - original_id: IWRPD8134D
+[2026-04-28 10:42:32,624: INFO: live_video_verification]:   - name: Suyash Milind Dustakar
+[2026-04-28 10:42:32,624: INFO: live_video_verification]:   - father_name: Suyash Milind Dustakar
+[2026-04-28 10:42:32,624: INFO: live_video_verification]:   - dob: 2005-04-04
+[2026-04-28 10:42:32,624: INFO: live_video_verification]:   - id_type: PAN
+[2026-04-28 10:42:32,624: INFO: live_video_verification]:   - embedding: [-0.482215017080307, 0.1518474519252777, -0.962512731552124, -0.27665501832962036, 0.22394444048404694, 0.7332682609558105, 0.3275148868560791, 0.10438269376754761, 0.3016706705093384, 1.2091736793518066, 0.2360072135925293, -0.6187236905097961, -0.6693780422210693, -0.9429832696914673, 0.41195711493492126, -1.554841160774231, 0.8153247833251953, -0.5071268081665039, -0.18883973360061646, -1.327223777770996, 0.6907494068145752, -0.44466400146484375, -0.09667286276817322, -0.2369631826877594, 0.27009227871894836, -0.42287757992744446, 0.26844286918640137, -1.0513598918914795, -0.92320716381073, 0.7156690359115601, 0.40376368165016174, 0.3785589337348938, 0.8318359851837158, -0.757585346698761, 1.0153982639312744, -0.06744426488876343, 1.2631181478500366, -1.7476481199264526, 0.8342809677124023, -2.080552816390991, 0.0390743613243103, 1.5065771341323853, 0.35105863213539124, 1.0252403020858765, 0.6822832226753235, 0.15045326948165894, -0.08774583041667938, -1.1810730695724487, -0.2613673508167267, 0.9986025094985962, 0.21169523894786835, 0.10426008701324463, -0.6205630302429199, -2.4557363986968994, 0.021091239526867867, 0.5980624556541443, 0.4654269814491272, -0.5136964917182922, 0.6119744181632996, -2.1146583557128906, 0.49562907218933105, -0.6910644769668579, 0.8895107507705688, -0.06982220709323883, 0.23361247777938843, 0.3771917223930359, -1.5966014862060547, 0.9718901515007019, -0.8209461569786072, -0.8442747592926025, 0.561282753944397, -0.28420910239219666, -0.8992795944213867, -2.4844207763671875, 1.3237015008926392, -0.062047068029642105, -0.08442974090576172, 0.051431313157081604, -1.1892268657684326, 0.5511877536773682, -0.5496391654014587, 1.7717115879058838, -0.9315015077590942, 0.3468720316886902, 0.07051899284124374, -0.1861625462770462, -0.9642719626426697, 0.15447935461997986, -1.9441055059432983, -0.2775983512401581, -0.7060245871543884, 0.7038034796714783, -1.061540961265564, 1.967572569847107, -0.07365579903125763, -0.46362707018852234, -0.43624427914619446, -0.2677454650402069, -1.9041903018951416, 0.5169147849082947, -0.014136986806988716, -0.47403356432914734, 0.1908891201019287, -1.6449918746948242, -2.065642833709717, -0.5922157764434814, -0.7150271534919739, -0.5577812194824219, -0.03310761600732803, 1.1310539245605469, -0.9617931842803955, -0.33815908432006836, 1.3028252124786377, 0.7786398530006409, 0.08932856470346451, 0.7410273551940918, 0.5174551010131836, -1.4535160064697266, -0.24522337317466736, 2.1216893196105957, 0.15976785123348236, -0.9399290084838867, 1.674363613128662, 0.08924558013677597, -0.40405625104904175, -1.5268949270248413, 0.9275854825973511, 0.33151182532310486]
+[2026-04-28 10:42:32,624: INFO: live_video_verification]:   - face_image: <class 'bytes'> (len=19587)
+[2026-04-28 10:42:32,624: INFO: live_video_verification]: ================================================================================
+[2026-04-28 10:42:34,703: INFO: live_video_verification]: Camera rejected 3840x2160, got 1280x720
+[2026-04-28 10:42:34,757: INFO: live_video_verification]: Camera rejected 2560x1440, got 1280x720
+[2026-04-28 10:42:34,796: INFO: live_video_verification]: Camera rejected 1920x1080, got 1280x720
+[2026-04-28 10:42:34,816: INFO: live_video_verification]: Camera accepted resolution: 1280x720
+[2026-04-28 10:42:36,705: INFO: live_video_verification]: Face detected - starting stabilization wait
+[2026-04-28 10:42:40,517: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 10:42:41,240: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 10:42:42,185: INFO: live_video_verification]: Face comparison - Distance: 0.739, Threshold: 0.680, Similarity: 60.3%
+[2026-04-28 10:42:42,185: INFO: live_video_verification]: NO MATCH! Distance 0.739 > Threshold 0.680
+[2026-04-28 10:42:42,188: INFO: live_video_verification]: Failed before reaching 1/3 (match: 60.3%)
+[2026-04-28 10:42:43,482: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 10:42:44,130: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 10:42:45,123: INFO: live_video_verification]: Face comparison - Distance: 0.682, Threshold: 0.680, Similarity: 64.8%
+[2026-04-28 10:42:45,123: INFO: live_video_verification]: NO MATCH! Distance 0.682 > Threshold 0.680
+[2026-04-28 10:42:45,125: INFO: live_video_verification]: Failed before reaching 1/3 (match: 64.8%)
+[2026-04-28 10:42:46,317: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 10:42:46,847: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 10:42:47,773: INFO: live_video_verification]: Face comparison - Distance: 0.696, Threshold: 0.680, Similarity: 63.7%
+[2026-04-28 10:42:47,774: INFO: live_video_verification]: NO MATCH! Distance 0.696 > Threshold 0.680
+[2026-04-28 10:42:47,776: INFO: live_video_verification]: Failed before reaching 1/3 (match: 63.7%)
+[2026-04-28 10:42:48,955: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 10:42:49,465: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 10:42:50,413: INFO: live_video_verification]: Face comparison - Distance: 0.662, Threshold: 0.680, Similarity: 65.9%
+[2026-04-28 10:42:50,413: INFO: live_video_verification]: MATCH! DeepFace verified=True, Similarity: 65.9%
+[2026-04-28 10:42:50,415: INFO: live_video_verification]: Verification streak: 1/3
+[2026-04-28 10:42:51,606: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 10:42:52,092: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 10:42:53,062: INFO: live_video_verification]: Face comparison - Distance: 0.705, Threshold: 0.680, Similarity: 63.0%
+[2026-04-28 10:42:53,063: INFO: live_video_verification]: NO MATCH! Distance 0.705 > Threshold 0.680
+[2026-04-28 10:42:53,064: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 63.0%)
+[2026-04-28 10:42:54,259: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 10:42:54,793: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 10:42:55,847: INFO: live_video_verification]: Face comparison - Distance: 0.633, Threshold: 0.680, Similarity: 67.4%
+[2026-04-28 10:42:55,847: INFO: live_video_verification]: MATCH! DeepFace verified=True, Similarity: 67.4%
+[2026-04-28 10:42:55,849: INFO: live_video_verification]: Verification streak: 2/3
+[2026-04-28 10:42:57,162: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 10:42:57,699: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 10:42:58,653: INFO: live_video_verification]: Face comparison - Distance: 0.677, Threshold: 0.680, Similarity: 65.1%
+[2026-04-28 10:42:58,653: INFO: live_video_verification]: MATCH! DeepFace verified=True, Similarity: 65.1%
+[2026-04-28 10:42:58,655: INFO: live_video_verification]: Verification streak: 3/3
+[2026-04-28 10:43:01,168: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 10:43:01,170: INFO: sql_connection]: Face encoded to JPEG for verified table: 19562 bytes
+[2026-04-28 10:43:01,235: INFO: sql_connection]: Verified record inserted into MySQL: Suyash Milind Dustakar (PAN: IWRPD8134D)
+[2026-04-28 10:43:01,235: INFO: live_video_verification]: Verified record saved: Suyash Milind Dustakar (PAN: IWRPD8134D)
+[2026-04-28 10:43:12,496: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:43:12,498: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:43:12,499: INFO: app]: Custom theme applied.
+[2026-04-28 10:43:12,501: INFO: app]: Selected: PAN
+[2026-04-28 10:43:27,865: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:43:27,919: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:43:27,923: INFO: app]: Custom theme applied.
+[2026-04-28 10:43:27,933: INFO: app]: Selected: AADHAR
+[2026-04-28 10:43:32,840: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:43:32,907: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:43:32,911: INFO: app]: Custom theme applied.
+[2026-04-28 10:43:32,917: INFO: app]: Selected: AADHAR
+[2026-04-28 10:43:37,640: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:43:37,643: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:43:37,647: INFO: app]: Custom theme applied.
+[2026-04-28 10:43:37,650: INFO: app]: Selected: AADHAR
+[2026-04-28 10:43:37,681: INFO: app]: Face image loaded.
+[2026-04-28 10:43:37,727: INFO: app]: ID card image loaded.
+[2026-04-28 10:43:37,768: INFO: preprocess]: contours are found at, (77, 421, 576, 1035)
+[2026-04-28 10:43:37,768: INFO: utils]: File not found: /Users/apple/Downloads/ekyc sssss/data\02_intermediate_data/contour_id.jpg
+[2026-04-28 10:43:37,769: INFO: app]: ID card ROI extracted.
+[2026-04-28 10:43:37,770: INFO: face_verification]: Extracting face
+[2026-04-28 10:43:37,770: INFO: face_verification]: Loading cascade from: /Users/apple/Downloads/ekyc sssss/data/models/haarcascade_frontalface_default.xml
+[2026-04-28 10:43:37,811: INFO: face_verification]: Loaded cascade successfully
+[2026-04-28 10:43:37,992: INFO: face_verification]: Face saved: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:43:37,995: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:43:38,001: INFO: preprocess]: Image saved successfully: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:43:38,001: INFO: app]: Faces extracted and saved.
+[2026-04-28 10:43:38,001: INFO: face_verification]: Verifying the images....
+[2026-04-28 10:43:38,001: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:43:38,001: INFO: utils]: File exists: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:43:38,002: INFO: face_verification]: Attempting DeepFace.verify with detector_backend='opencv'
+[2026-04-28 10:43:39,424: INFO: face_verification]: DeepFace result (opencv): {'verified': True, 'distance': 0.5554719272530497, 'threshold': 0.68, 'model': 'VGG-Face', 'detector_backend': 'opencv', 'similarity_metric': 'cosine', 'facial_areas': {'img1': {'x': 190, 'y': 154, 'w': 472, 'h': 472, 'left_eye': (508, 341), 'right_eye': (334, 337)}, 'img2': {'x': 17, 'y': 16, 'w': 66, 'h': 66, 'left_eye': None, 'right_eye': None}}, 'time': 1.42}
+[2026-04-28 10:43:39,425: INFO: face_verification]: Faces are verified as the same person
+[2026-04-28 10:43:39,425: INFO: app]: Face verification status: successful.
+[2026-04-28 10:43:39,425: INFO: ocr_engine]: Using INTELLIGENT AADHAR CARD PARSER...
+[2026-04-28 10:43:39,425: INFO: aadhar_intelligent_ocr]: Starting INTELLIGENT AADHAR parsing...
+[2026-04-28 10:43:39,425: INFO: aadhar_intelligent_ocr]: Preprocessing Aadhar card...
+[2026-04-28 10:43:44,587: INFO: aadhar_intelligent_ocr]: Preprocessing complete: (3234, 1800)
+[2026-04-28 10:43:44,621: INFO: aadhar_intelligent_ocr]: Extracting text with layout analysis...
+[2026-04-28 10:43:44,621: INFO: aadhar_intelligent_ocr]: Running Tesseract...
+[2026-04-28 10:43:46,137: INFO: aadhar_intelligent_ocr]: Tesseract: 48 text elements
+[2026-04-28 10:43:46,137: INFO: aadhar_intelligent_ocr]: 🌏 Running EasyOCR with layout analysis...
+[2026-04-28 10:43:46,138: WARNING: easyocr]: Using CPU. Note: This module is much faster with a GPU.
+[2026-04-28 10:45:10,986: INFO: aadhar_intelligent_ocr]: EasyOCR: 42 text elements
+[2026-04-28 10:45:10,987: INFO: aadhar_intelligent_ocr]: Total text elements: 90
+[2026-04-28 10:45:11,027: INFO: aadhar_intelligent_ocr]: 🔢 AADHAR CANDIDATE: 911875571849 (conf: 0.00)
+[2026-04-28 10:45:11,027: INFO: aadhar_intelligent_ocr]: 🔢 AADHAR CANDIDATE: 911875571849 (conf: 0.23)
+[2026-04-28 10:45:11,027: INFO: aadhar_intelligent_ocr]: SELECTED AADHAR: 911875571849
+[2026-04-28 10:45:11,027: INFO: aadhar_intelligent_ocr]: ⚥ GENDER: Male (from: पुरुष / MALE)
+[2026-04-28 10:45:11,028: INFO: aadhar_intelligent_ocr]: ================================================================================
+[2026-04-28 10:45:11,028: INFO: aadhar_intelligent_ocr]: INTELLIGENT AADHAR EXTRACTION COMPLETE:
+[2026-04-28 10:45:11,028: INFO: aadhar_intelligent_ocr]:    Aadhar: 911875571849
+[2026-04-28 10:45:11,028: INFO: aadhar_intelligent_ocr]:    Name: None
+[2026-04-28 10:45:11,028: INFO: aadhar_intelligent_ocr]:    DOB: None
+[2026-04-28 10:45:11,028: INFO: aadhar_intelligent_ocr]:    Gender: Male
+[2026-04-28 10:45:11,028: INFO: aadhar_intelligent_ocr]: ================================================================================
+[2026-04-28 10:45:11,029: INFO: ocr_engine]: 📄 INTELLIGENT AADHAR RESULT: 911875571849 | Aadhar: 911875571849 | Gender: Male
+[2026-04-28 10:45:11,030: INFO: app]: Text extracted and information parsed from ID card.
+[2026-04-28 10:45:11,030: INFO: app]: PARSED INFO - Name: , ID: 9118 7557 1849
+[2026-04-28 10:45:11,031: INFO: app]: AADHAR ID (unhashed): 9118 7557 1849
+[2026-04-28 10:45:11,031: INFO: sql_connection]: Trying Aadhaar candidate: '9118 7557 1849'
+[2026-04-28 10:45:11,052: INFO: sql_connection]: ✓ Fetched records successfully from MySQL aadhar table using candidate '9118 7557 1849'.
+[2026-04-28 10:45:11,052: INFO: sql_connection]: Duplicate records found.
+[2026-04-28 10:45:11,060: INFO: app]: Duplicate user found: 9118 7557 1849
+[2026-04-28 10:45:11,061: INFO: sql_connection]: Trying Aadhaar candidate: '9118 7557 1849'
+[2026-04-28 10:45:11,065: INFO: sql_connection]: ✓ Fetched records successfully from MySQL aadhar table using candidate '9118 7557 1849'.
+[2026-04-28 10:45:53,926: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:45:53,935: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:45:53,945: INFO: app]: Custom theme applied.
+[2026-04-28 10:45:53,950: INFO: app]: Selected: PAN
+[2026-04-28 10:45:53,979: INFO: app]: Face image loaded.
+[2026-04-28 10:45:54,011: INFO: app]: ID card image loaded.
+[2026-04-28 10:45:54,066: INFO: preprocess]: contours are found at, (77, 421, 576, 1035)
+[2026-04-28 10:45:54,066: INFO: utils]: File not found: /Users/apple/Downloads/ekyc sssss/data\02_intermediate_data/contour_id.jpg
+[2026-04-28 10:45:54,067: INFO: app]: ID card ROI extracted.
+[2026-04-28 10:45:54,067: INFO: face_verification]: Extracting face
+[2026-04-28 10:45:54,070: INFO: face_verification]: Loading cascade from: /Users/apple/Downloads/ekyc sssss/data/models/haarcascade_frontalface_default.xml
+[2026-04-28 10:45:54,104: INFO: face_verification]: Loaded cascade successfully
+[2026-04-28 10:45:54,300: INFO: face_verification]: Face saved: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:45:54,304: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:45:54,311: INFO: preprocess]: Image saved successfully: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:45:54,312: INFO: app]: Faces extracted and saved.
+[2026-04-28 10:45:54,312: INFO: face_verification]: Verifying the images....
+[2026-04-28 10:45:54,312: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 10:45:54,312: INFO: utils]: File exists: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 10:45:54,312: INFO: face_verification]: Attempting DeepFace.verify with detector_backend='opencv'
+[2026-04-28 10:45:57,660: INFO: face_verification]: DeepFace result (opencv): {'verified': True, 'distance': 0.5554719272530497, 'threshold': 0.68, 'model': 'VGG-Face', 'detector_backend': 'opencv', 'similarity_metric': 'cosine', 'facial_areas': {'img1': {'x': 190, 'y': 154, 'w': 472, 'h': 472, 'left_eye': (508, 341), 'right_eye': (334, 337)}, 'img2': {'x': 17, 'y': 16, 'w': 66, 'h': 66, 'left_eye': None, 'right_eye': None}}, 'time': 3.35}
+[2026-04-28 10:45:57,661: INFO: face_verification]: Faces are verified as the same person
+[2026-04-28 10:45:57,661: INFO: app]: Face verification status: successful.
+[2026-04-28 10:45:57,661: INFO: ocr_engine]: Using INTELLIGENT PAN CARD PARSER...
+[2026-04-28 10:45:57,661: INFO: pan_intelligent_ocr]: 🔧 Preprocessing PAN card...
+[2026-04-28 10:45:57,661: INFO: pan_intelligent_ocr]: Original shape: (1035, 576, 3)
+[2026-04-28 10:45:58,281: INFO: app]: Configuration loaded successfully
+[2026-04-28 10:45:58,284: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 10:45:58,285: INFO: app]: Custom theme applied.
+[2026-04-28 10:45:58,289: INFO: app]: Selected: PAN
+[2026-04-28 10:46:04,695: INFO: pan_intelligent_ocr]: PAN preprocessing complete: (3234, 1800)
+[2026-04-28 10:46:04,730: INFO: pan_intelligent_ocr]: Saved: data/02_intermediate_data/pan_preprocessed_debug.jpg
+[2026-04-28 10:46:04,730: INFO: pan_intelligent_ocr]: 📖 Extracting text with layout analysis...
+[2026-04-28 10:46:04,730: INFO: pan_intelligent_ocr]: 🔤 Running Tesseract with layout analysis...
+[2026-04-28 10:46:06,776: INFO: pan_intelligent_ocr]: Tesseract: 6 text elements
+[2026-04-28 10:46:06,777: INFO: pan_intelligent_ocr]: 🌏 Running EasyOCR with layout analysis...
+[2026-04-28 10:47:04,615: INFO: pan_intelligent_ocr]: EasyOCR: 41 text elements
+[2026-04-28 10:47:04,617: INFO: pan_intelligent_ocr]: Total text elements: 47
+[2026-04-28 10:47:04,617: INFO: pan_intelligent_ocr]: Starting INTELLIGENT PAN parsing...
+[2026-04-28 10:47:04,618: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: Mmankorudia (conf: 0.22, y: 2255)
+[2026-04-28 10:47:04,618: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: Anwik Vinod Kadam (conf: 0.86, y: 2452)
+[2026-04-28 10:47:04,618: INFO: pan_intelligent_ocr]: 📅 DOB CANDIDATE: 21/10/2004 (conf: 0.41)
+[2026-04-28 10:47:04,618: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: gad/ MALE (conf: 0.26, y: 2574)
+[2026-04-28 10:47:04,618: INFO: pan_intelligent_ocr]: SELECTED DOB: 21/10/2004
+[2026-04-28 10:47:04,618: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 10:47:04,619: INFO: pan_intelligent_ocr]: INTELLIGENT EXTRACTION COMPLETE:
+[2026-04-28 10:47:04,619: INFO: pan_intelligent_ocr]:    PAN: None
+[2026-04-28 10:47:04,619: INFO: pan_intelligent_ocr]:    Name: None
+[2026-04-28 10:47:04,619: INFO: pan_intelligent_ocr]:    Father: None
+[2026-04-28 10:47:04,619: INFO: pan_intelligent_ocr]:    DOB: 21/10/2004
+[2026-04-28 10:47:04,619: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 10:47:04,620: INFO: ocr_engine]: 📄 INTELLIGENT RESULT: DOB: 21/10/2004 | 44205/06055 | 9136505186 | RR | 0 | 3 | 6 | Ilao | Ui | UXAUSu } = | J1 | airuflt 7iap:| Enrolment No: 2722/44205/06055 | To | &fdd @7iq @Q1 | Anwik Vinod Kadam | 65-8/21 new Brindavan darshan Co-Op HSG Society | Bindavan complex | Majiwada | Thane | Thane Maharashba | 400601 | 913...
+[2026-04-28 10:47:04,620: INFO: postprocess]: Extracting PAN information
+[2026-04-28 10:47:04,634: INFO: app]: Text extracted and information parsed from ID card.
+[2026-04-28 10:47:04,634: INFO: app]: PARSED INFO - Name: , ID: DOBZI1020O
+[2026-04-28 10:47:04,635: INFO: app]: PAN ID hashed: DOBZI1020O -> a4b103a92d6ed65744c267a987f880d15a41133950ba4e0f837cb4c16db83342
+[2026-04-28 10:47:04,654: INFO: sql_connection]: No records found for any candidate values.
+[2026-04-28 10:47:04,661: INFO: sql_connection]: No duplicate records found.
+[2026-04-28 11:25:05,961: INFO: app]: Configuration loaded successfully
+[2026-04-28 11:25:05,983: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 11:25:05,985: INFO: app]: Custom theme applied.
+[2026-04-28 11:25:05,987: INFO: app]: Selected: PAN
+[2026-04-28 11:47:32,349: INFO: app]: Configuration loaded successfully
+[2026-04-28 11:47:32,366: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 11:47:32,367: INFO: app]: Custom theme applied.
+[2026-04-28 11:47:32,371: INFO: app]: Selected: PAN
+[2026-04-28 11:57:06,826: INFO: app]: Configuration loaded successfully
+[2026-04-28 11:57:06,833: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 11:57:06,833: INFO: app]: Custom theme applied.
+[2026-04-28 11:57:06,837: INFO: app]: Selected: PAN
+[2026-04-28 12:07:11,179: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:07:11,191: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:07:11,192: INFO: app]: Custom theme applied.
+[2026-04-28 12:07:11,197: INFO: app]: Selected: PAN
+[2026-04-28 12:39:45,415: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:39:45,433: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:39:45,435: INFO: app]: Custom theme applied.
+[2026-04-28 12:39:45,445: INFO: app]: Selected: PAN
+[2026-04-28 12:39:55,422: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:39:55,427: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:39:55,428: INFO: app]: Custom theme applied.
+[2026-04-28 12:39:55,445: INFO: app]: Selected: PAN
+[2026-04-28 12:40:02,133: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:40:02,136: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:40:02,137: INFO: app]: Custom theme applied.
+[2026-04-28 12:40:02,140: INFO: app]: Selected: PAN
+[2026-04-28 12:40:02,198: INFO: app]: Face image loaded.
+[2026-04-28 12:40:02,248: INFO: app]: ID card image loaded.
+[2026-04-28 12:40:02,295: INFO: preprocess]: contours are found at, (0, 0, 983, 616)
+[2026-04-28 12:40:02,295: INFO: utils]: File not found: /Users/apple/Downloads/ekyc sssss/data\02_intermediate_data/contour_id.jpg
+[2026-04-28 12:40:02,299: INFO: app]: ID card ROI extracted.
+[2026-04-28 12:40:02,299: INFO: face_verification]: Extracting face
+[2026-04-28 12:40:02,299: INFO: face_verification]: Loading cascade from: /Users/apple/Downloads/ekyc sssss/data/models/haarcascade_frontalface_default.xml
+[2026-04-28 12:40:02,369: INFO: face_verification]: Loaded cascade successfully
+[2026-04-28 12:40:02,702: INFO: face_verification]: Face saved: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 12:40:02,708: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 12:40:02,712: INFO: preprocess]: Image saved successfully: data/02_intermediate_data/face_image.jpg
+[2026-04-28 12:40:02,713: INFO: app]: Faces extracted and saved.
+[2026-04-28 12:40:02,713: INFO: face_verification]: Verifying the images....
+[2026-04-28 12:40:02,713: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 12:40:02,713: INFO: utils]: File exists: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 12:40:02,713: INFO: face_verification]: Attempting DeepFace.verify with detector_backend='opencv'
+[2026-04-28 12:40:06,795: INFO: face_verification]: DeepFace result (opencv): {'verified': True, 'distance': 0.44480999586403636, 'threshold': 0.68, 'model': 'VGG-Face', 'detector_backend': 'opencv', 'similarity_metric': 'cosine', 'facial_areas': {'img1': {'x': 56, 'y': 98, 'w': 173, 'h': 173, 'left_eye': None, 'right_eye': None}, 'img2': {'x': 27, 'y': 26, 'w': 105, 'h': 105, 'left_eye': (100, 66), 'right_eye': (52, 69)}}, 'time': 4.08}
+[2026-04-28 12:40:06,796: INFO: face_verification]: Faces are verified as the same person
+[2026-04-28 12:40:06,796: INFO: app]: Face verification status: successful.
+[2026-04-28 12:40:06,796: INFO: ocr_engine]: Using INTELLIGENT PAN CARD PARSER...
+[2026-04-28 12:40:06,796: INFO: pan_intelligent_ocr]: 🔧 Preprocessing PAN card...
+[2026-04-28 12:40:06,798: INFO: pan_intelligent_ocr]: Original shape: (616, 983, 3)
+[2026-04-28 12:40:08,928: INFO: pan_intelligent_ocr]: PAN preprocessing complete: (1127, 1800)
+[2026-04-28 12:40:08,946: INFO: pan_intelligent_ocr]: Saved: data/02_intermediate_data/pan_preprocessed_debug.jpg
+[2026-04-28 12:40:08,947: INFO: pan_intelligent_ocr]: 📖 Extracting text with layout analysis...
+[2026-04-28 12:40:08,947: INFO: pan_intelligent_ocr]: 🔤 Running Tesseract with layout analysis...
+[2026-04-28 12:40:09,994: INFO: pan_intelligent_ocr]: Tesseract: 1 text elements
+[2026-04-28 12:40:09,994: INFO: pan_intelligent_ocr]: 🌏 Running EasyOCR with layout analysis...
+[2026-04-28 12:40:32,511: INFO: pan_intelligent_ocr]: EasyOCR: 21 text elements
+[2026-04-28 12:40:32,512: INFO: pan_intelligent_ocr]: Total text elements: 22
+[2026-04-28 12:40:32,512: INFO: pan_intelligent_ocr]: Starting INTELLIGENT PAN parsing...
+[2026-04-28 12:40:32,513: INFO: pan_intelligent_ocr]: NAME CANDIDATE: Permanent Account Number Card (conf: 0.92, y: 384)
+[2026-04-28 12:40:32,513: INFO: pan_intelligent_ocr]: PAN CANDIDATE: IWRPD8134D (conf: 0.98, score: 118.3, pos: 600,436)
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: NAME CANDIDATE: Name (conf: 0.85, y: 639)
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: SUYASH MILIND DUSTAKAR (conf: 0.88, y: 677)
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: Father's Name (conf: 0.68, y: 787)
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: MILIND GOVIND DUSTAKAR (conf: 0.67, y: 829)
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: 📅 DOB CANDIDATE: 04/04/2005 (conf: 0.78)
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: SELECTED PAN: IWRPD8134D
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: SELECTED DOB: 04/04/2005
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: SELECTED NAME: PERMANENT ACCOUNT NUMBER CARD
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: SELECTED FATHER: SUYASH MILIND DUSTAKAR
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: INTELLIGENT EXTRACTION COMPLETE:
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]:    PAN: IWRPD8134D
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]:    Name: PERMANENT ACCOUNT NUMBER CARD
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]:    Father: SUYASH MILIND DUSTAKAR
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]:    DOB: 04/04/2005
+[2026-04-28 12:40:32,514: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 12:40:32,515: INFO: ocr_engine]: 📄 INTELLIGENT RESULT: PAN: IWRPD8134D | Name: PERMANENT ACCOUNT NUMBER CARD | Father: SUYASH MILIND DUSTAKAR | DOB: 04/04/2005 | 4 | 310er | {@aT | "HRT | rrezr | INCOME TAX DEPARTMENT | GOVT OF INDIA | TeTT (t TCHT *Tef | Permanent Account Number Card | IWRPD8134D | TT | Name | SUYASH MILIND DUSTAKAR | fuT ZT TTh | Fath...
+[2026-04-28 12:40:32,515: INFO: postprocess]: Extracting PAN information
+[2026-04-28 12:40:32,519: INFO: app]: Text extracted and information parsed from ID card.
+[2026-04-28 12:40:32,519: INFO: app]: PARSED INFO - Name: Suyash Milind Dustakar, ID: IWRPD8134D
+[2026-04-28 12:40:32,519: INFO: app]: PAN ID hashed: IWRPD8134D -> 4ca121ee680a5e2be0c0a33e53d11066e6c446c3e97aabd55385d49ff075171a
+[2026-04-28 12:40:32,602: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 12:40:32,603: INFO: sql_connection]: Duplicate records found.
+[2026-04-28 12:40:32,604: INFO: app]: Duplicate user found: IWRPD8134D
+[2026-04-28 12:40:32,607: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 12:40:56,763: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:40:56,765: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:40:56,766: INFO: app]: Custom theme applied.
+[2026-04-28 12:40:56,767: INFO: app]: Selected: PAN
+[2026-04-28 12:40:56,773: INFO: app]: Face image loaded.
+[2026-04-28 12:40:56,808: INFO: app]: ID card image loaded.
+[2026-04-28 12:40:56,827: INFO: preprocess]: contours are found at, (0, 0, 983, 616)
+[2026-04-28 12:40:56,828: INFO: utils]: File not found: /Users/apple/Downloads/ekyc sssss/data\02_intermediate_data/contour_id.jpg
+[2026-04-28 12:40:56,829: INFO: app]: ID card ROI extracted.
+[2026-04-28 12:40:56,829: INFO: face_verification]: Extracting face
+[2026-04-28 12:40:56,829: INFO: face_verification]: Loading cascade from: /Users/apple/Downloads/ekyc sssss/data/models/haarcascade_frontalface_default.xml
+[2026-04-28 12:40:56,892: INFO: face_verification]: Loaded cascade successfully
+[2026-04-28 12:40:57,287: INFO: face_verification]: Face saved: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 12:40:57,293: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 12:40:57,294: INFO: preprocess]: Image saved successfully: data/02_intermediate_data/face_image.jpg
+[2026-04-28 12:40:57,295: INFO: app]: Faces extracted and saved.
+[2026-04-28 12:40:57,295: INFO: face_verification]: Verifying the images....
+[2026-04-28 12:40:57,295: INFO: utils]: File exists: data/02_intermediate_data/face_image.jpg
+[2026-04-28 12:40:57,296: INFO: utils]: File exists: /Users/apple/Downloads/ekyc sssss/data/02_intermediate_data/extracted_face.jpg
+[2026-04-28 12:40:57,296: INFO: face_verification]: Attempting DeepFace.verify with detector_backend='opencv'
+[2026-04-28 12:40:58,263: INFO: face_verification]: DeepFace result (opencv): {'verified': True, 'distance': 0.44480999586403636, 'threshold': 0.68, 'model': 'VGG-Face', 'detector_backend': 'opencv', 'similarity_metric': 'cosine', 'facial_areas': {'img1': {'x': 56, 'y': 98, 'w': 173, 'h': 173, 'left_eye': None, 'right_eye': None}, 'img2': {'x': 27, 'y': 26, 'w': 105, 'h': 105, 'left_eye': (100, 66), 'right_eye': (52, 69)}}, 'time': 0.97}
+[2026-04-28 12:40:58,263: INFO: face_verification]: Faces are verified as the same person
+[2026-04-28 12:40:58,263: INFO: app]: Face verification status: successful.
+[2026-04-28 12:40:58,263: INFO: ocr_engine]: Using INTELLIGENT PAN CARD PARSER...
+[2026-04-28 12:40:58,263: INFO: pan_intelligent_ocr]: 🔧 Preprocessing PAN card...
+[2026-04-28 12:40:58,264: INFO: pan_intelligent_ocr]: Original shape: (616, 983, 3)
+[2026-04-28 12:40:59,787: INFO: pan_intelligent_ocr]: PAN preprocessing complete: (1127, 1800)
+[2026-04-28 12:40:59,799: INFO: pan_intelligent_ocr]: Saved: data/02_intermediate_data/pan_preprocessed_debug.jpg
+[2026-04-28 12:40:59,799: INFO: pan_intelligent_ocr]: 📖 Extracting text with layout analysis...
+[2026-04-28 12:40:59,799: INFO: pan_intelligent_ocr]: 🔤 Running Tesseract with layout analysis...
+[2026-04-28 12:41:00,589: INFO: pan_intelligent_ocr]: Tesseract: 1 text elements
+[2026-04-28 12:41:00,590: INFO: pan_intelligent_ocr]: 🌏 Running EasyOCR with layout analysis...
+[2026-04-28 12:41:21,349: INFO: pan_intelligent_ocr]: EasyOCR: 21 text elements
+[2026-04-28 12:41:21,351: INFO: pan_intelligent_ocr]: Total text elements: 22
+[2026-04-28 12:41:21,351: INFO: pan_intelligent_ocr]: Starting INTELLIGENT PAN parsing...
+[2026-04-28 12:41:21,351: INFO: pan_intelligent_ocr]: NAME CANDIDATE: Permanent Account Number Card (conf: 0.92, y: 384)
+[2026-04-28 12:41:21,351: INFO: pan_intelligent_ocr]: PAN CANDIDATE: IWRPD8134D (conf: 0.98, score: 118.3, pos: 600,436)
+[2026-04-28 12:41:21,351: INFO: pan_intelligent_ocr]: NAME CANDIDATE: Name (conf: 0.85, y: 639)
+[2026-04-28 12:41:21,351: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: SUYASH MILIND DUSTAKAR (conf: 0.88, y: 677)
+[2026-04-28 12:41:21,351: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: Father's Name (conf: 0.68, y: 787)
+[2026-04-28 12:41:21,351: INFO: pan_intelligent_ocr]: FATHER CANDIDATE: MILIND GOVIND DUSTAKAR (conf: 0.67, y: 829)
+[2026-04-28 12:41:21,351: INFO: pan_intelligent_ocr]: 📅 DOB CANDIDATE: 04/04/2005 (conf: 0.78)
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]: SELECTED PAN: IWRPD8134D
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]: SELECTED DOB: 04/04/2005
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]: SELECTED NAME: PERMANENT ACCOUNT NUMBER CARD
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]: SELECTED FATHER: SUYASH MILIND DUSTAKAR
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]: INTELLIGENT EXTRACTION COMPLETE:
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]:    PAN: IWRPD8134D
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]:    Name: PERMANENT ACCOUNT NUMBER CARD
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]:    Father: SUYASH MILIND DUSTAKAR
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]:    DOB: 04/04/2005
+[2026-04-28 12:41:21,352: INFO: pan_intelligent_ocr]: ================================================================================
+[2026-04-28 12:41:21,352: INFO: ocr_engine]: 📄 INTELLIGENT RESULT: PAN: IWRPD8134D | Name: PERMANENT ACCOUNT NUMBER CARD | Father: SUYASH MILIND DUSTAKAR | DOB: 04/04/2005 | 4 | 310er | {@aT | "HRT | rrezr | INCOME TAX DEPARTMENT | GOVT OF INDIA | TeTT (t TCHT *Tef | Permanent Account Number Card | IWRPD8134D | TT | Name | SUYASH MILIND DUSTAKAR | fuT ZT TTh | Fath...
+[2026-04-28 12:41:21,352: INFO: postprocess]: Extracting PAN information
+[2026-04-28 12:41:21,356: INFO: app]: Text extracted and information parsed from ID card.
+[2026-04-28 12:41:21,357: INFO: app]: PARSED INFO - Name: Suyash Milind Dustakar, ID: IWRPD8134D
+[2026-04-28 12:41:21,357: INFO: app]: PAN ID hashed: IWRPD8134D -> 4ca121ee680a5e2be0c0a33e53d11066e6c446c3e97aabd55385d49ff075171a
+[2026-04-28 12:41:21,367: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 12:41:21,367: INFO: sql_connection]: Duplicate records found.
+[2026-04-28 12:41:21,371: INFO: app]: Duplicate user found: IWRPD8134D
+[2026-04-28 12:41:21,375: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 12:41:22,063: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:41:22,065: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:41:22,065: INFO: app]: Custom theme applied.
+[2026-04-28 12:41:59,214: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:41:59,266: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:41:59,281: INFO: app]: Custom theme applied.
+[2026-04-28 12:42:38,268: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:42:38,273: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:42:38,274: INFO: app]: Custom theme applied.
+[2026-04-28 12:42:38,380: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:42:38,382: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:42:38,383: INFO: app]: Custom theme applied.
+[2026-04-28 12:42:38,798: INFO: live_video_verification]: Fetching PAN details for ID: IWRPD8134D
+[2026-04-28 12:42:38,802: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 12:42:38,804: INFO: live_video_verification]: Candidate 'IWRPD8134D' returned 1 records
+[2026-04-28 12:42:38,805: INFO: live_video_verification]: ✓ User found: Suyash Milind Dustakar
+[2026-04-28 12:42:38,805: INFO: live_video_verification]: DB details fetched for: IWRPD8134D
+[2026-04-28 12:42:38,806: INFO: live_video_verification]: DB details keys: ['id', 'original_id', 'name', 'father_name', 'dob', 'id_type', 'embedding', 'face_image']
+[2026-04-28 12:42:38,807: INFO: live_video_verification]:   - id: 4ca121ee680a5e2be0c0a33e53d11066e6c446c3e97aabd55385d49ff075171a
+[2026-04-28 12:42:38,809: INFO: live_video_verification]:   - original_id: IWRPD8134D
+[2026-04-28 12:42:38,809: INFO: live_video_verification]:   - name: Suyash Milind Dustakar
+[2026-04-28 12:42:38,809: INFO: live_video_verification]:   - father_name: Suyash Milind Dustakar
+[2026-04-28 12:42:38,809: INFO: live_video_verification]:   - dob: 2005-04-04
+[2026-04-28 12:42:38,818: INFO: live_video_verification]:   - id_type: PAN
+[2026-04-28 12:42:38,818: INFO: live_video_verification]:   - embedding: [-0.482215017080307, 0.1518474519252777, -0.962512731552124, -0.27665501832962036, 0.22394444048404694, 0.7332682609558105, 0.3275148868560791, 0.10438269376754761, 0.3016706705093384, 1.2091736793518066, 0.2360072135925293, -0.6187236905097961, -0.6693780422210693, -0.9429832696914673, 0.41195711493492126, -1.554841160774231, 0.8153247833251953, -0.5071268081665039, -0.18883973360061646, -1.327223777770996, 0.6907494068145752, -0.44466400146484375, -0.09667286276817322, -0.2369631826877594, 0.27009227871894836, -0.42287757992744446, 0.26844286918640137, -1.0513598918914795, -0.92320716381073, 0.7156690359115601, 0.40376368165016174, 0.3785589337348938, 0.8318359851837158, -0.757585346698761, 1.0153982639312744, -0.06744426488876343, 1.2631181478500366, -1.7476481199264526, 0.8342809677124023, -2.080552816390991, 0.0390743613243103, 1.5065771341323853, 0.35105863213539124, 1.0252403020858765, 0.6822832226753235, 0.15045326948165894, -0.08774583041667938, -1.1810730695724487, -0.2613673508167267, 0.9986025094985962, 0.21169523894786835, 0.10426008701324463, -0.6205630302429199, -2.4557363986968994, 0.021091239526867867, 0.5980624556541443, 0.4654269814491272, -0.5136964917182922, 0.6119744181632996, -2.1146583557128906, 0.49562907218933105, -0.6910644769668579, 0.8895107507705688, -0.06982220709323883, 0.23361247777938843, 0.3771917223930359, -1.5966014862060547, 0.9718901515007019, -0.8209461569786072, -0.8442747592926025, 0.561282753944397, -0.28420910239219666, -0.8992795944213867, -2.4844207763671875, 1.3237015008926392, -0.062047068029642105, -0.08442974090576172, 0.051431313157081604, -1.1892268657684326, 0.5511877536773682, -0.5496391654014587, 1.7717115879058838, -0.9315015077590942, 0.3468720316886902, 0.07051899284124374, -0.1861625462770462, -0.9642719626426697, 0.15447935461997986, -1.9441055059432983, -0.2775983512401581, -0.7060245871543884, 0.7038034796714783, -1.061540961265564, 1.967572569847107, -0.07365579903125763, -0.46362707018852234, -0.43624427914619446, -0.2677454650402069, -1.9041903018951416, 0.5169147849082947, -0.014136986806988716, -0.47403356432914734, 0.1908891201019287, -1.6449918746948242, -2.065642833709717, -0.5922157764434814, -0.7150271534919739, -0.5577812194824219, -0.03310761600732803, 1.1310539245605469, -0.9617931842803955, -0.33815908432006836, 1.3028252124786377, 0.7786398530006409, 0.08932856470346451, 0.7410273551940918, 0.5174551010131836, -1.4535160064697266, -0.24522337317466736, 2.1216893196105957, 0.15976785123348236, -0.9399290084838867, 1.674363613128662, 0.08924558013677597, -0.40405625104904175, -1.5268949270248413, 0.9275854825973511, 0.33151182532310486]
+[2026-04-28 12:42:38,819: INFO: live_video_verification]:   - face_image: <class 'bytes'> (len=19587)
+[2026-04-28 12:42:38,819: INFO: live_video_verification]: ================================================================================
+[2026-04-28 12:42:40,148: INFO: live_video_verification]: Camera rejected 3840x2160, got 1280x720
+[2026-04-28 12:42:40,181: INFO: live_video_verification]: Camera rejected 2560x1440, got 1280x720
+[2026-04-28 12:42:40,213: INFO: live_video_verification]: Camera rejected 1920x1080, got 1280x720
+[2026-04-28 12:42:40,240: INFO: live_video_verification]: Camera accepted resolution: 1280x720
+[2026-04-28 12:42:41,661: INFO: live_video_verification]: Face detected - starting stabilization wait
+[2026-04-28 12:42:44,812: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:42:45,709: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:42:46,564: INFO: live_video_verification]: Face comparison - Distance: 0.852, Threshold: 0.680, Similarity: 51.4%
+[2026-04-28 12:42:46,564: INFO: live_video_verification]: NO MATCH! Distance 0.852 > Threshold 0.680
+[2026-04-28 12:42:46,567: INFO: live_video_verification]: Failed before reaching 1/3 (match: 51.4%)
+[2026-04-28 12:42:47,542: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:42:47,899: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:42:48,743: INFO: live_video_verification]: Face comparison - Distance: 0.842, Threshold: 0.680, Similarity: 52.2%
+[2026-04-28 12:42:48,743: INFO: live_video_verification]: NO MATCH! Distance 0.842 > Threshold 0.680
+[2026-04-28 12:42:48,747: INFO: live_video_verification]: Failed before reaching 1/3 (match: 52.2%)
+[2026-04-28 12:42:49,694: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:42:50,035: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:42:50,825: INFO: live_video_verification]: Face comparison - Distance: 0.797, Threshold: 0.680, Similarity: 55.7%
+[2026-04-28 12:42:50,825: INFO: live_video_verification]: NO MATCH! Distance 0.797 > Threshold 0.680
+[2026-04-28 12:42:50,828: INFO: live_video_verification]: Failed before reaching 1/3 (match: 55.7%)
+[2026-04-28 12:42:51,823: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:42:52,234: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:42:53,026: INFO: live_video_verification]: Face comparison - Distance: 0.625, Threshold: 0.680, Similarity: 67.8%
+[2026-04-28 12:42:53,027: INFO: live_video_verification]: MATCH! DeepFace verified=True, Similarity: 67.8%
+[2026-04-28 12:42:53,029: INFO: live_video_verification]: Verification streak: 1/3
+[2026-04-28 12:42:54,037: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:42:54,435: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:42:55,231: INFO: live_video_verification]: Face comparison - Distance: 0.732, Threshold: 0.680, Similarity: 60.9%
+[2026-04-28 12:42:55,231: INFO: live_video_verification]: NO MATCH! Distance 0.732 > Threshold 0.680
+[2026-04-28 12:42:55,233: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 60.9%)
+[2026-04-28 12:42:56,288: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:42:56,638: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:42:57,434: INFO: live_video_verification]: Face comparison - Distance: 0.900, Threshold: 0.680, Similarity: 47.5%
+[2026-04-28 12:42:57,434: INFO: live_video_verification]: NO MATCH! Distance 0.900 > Threshold 0.680
+[2026-04-28 12:42:57,436: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 47.5%)
+[2026-04-28 12:42:58,461: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:42:58,876: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:42:59,676: INFO: live_video_verification]: Face comparison - Distance: 0.517, Threshold: 0.680, Similarity: 73.4%
+[2026-04-28 12:42:59,676: INFO: live_video_verification]: MATCH! DeepFace verified=True, Similarity: 73.4%
+[2026-04-28 12:42:59,679: INFO: live_video_verification]: Verification streak: 2/3
+[2026-04-28 12:43:00,781: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:01,212: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:02,025: INFO: live_video_verification]: Face comparison - Distance: 0.562, Threshold: 0.680, Similarity: 71.1%
+[2026-04-28 12:43:02,025: INFO: live_video_verification]: MATCH! DeepFace verified=True, Similarity: 71.1%
+[2026-04-28 12:43:02,028: INFO: live_video_verification]: Verification streak: 3/3
+[2026-04-28 12:43:04,312: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:04,317: INFO: sql_connection]: Face encoded to JPEG for verified table: 19562 bytes
+[2026-04-28 12:43:04,394: INFO: sql_connection]: Verified record inserted into MySQL: Suyash Milind Dustakar (PAN: IWRPD8134D)
+[2026-04-28 12:43:04,395: INFO: live_video_verification]: Verified record saved: Suyash Milind Dustakar (PAN: IWRPD8134D)
+[2026-04-28 12:43:20,999: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:43:21,001: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:43:21,034: INFO: app]: Custom theme applied.
+[2026-04-28 12:43:23,463: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:43:23,465: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:43:23,466: INFO: app]: Custom theme applied.
+[2026-04-28 12:43:23,475: INFO: live_video_verification]: Fetching PAN details for ID: IWRPD8134D
+[2026-04-28 12:43:23,494: INFO: sql_connection]: Fetched records successfully from MySQL users table using candidate 'IWRPD8134D'.
+[2026-04-28 12:43:23,495: INFO: live_video_verification]: Candidate 'IWRPD8134D' returned 1 records
+[2026-04-28 12:43:23,495: INFO: live_video_verification]: ✓ User found: Suyash Milind Dustakar
+[2026-04-28 12:43:23,496: INFO: live_video_verification]: DB details fetched for: IWRPD8134D
+[2026-04-28 12:43:23,496: INFO: live_video_verification]: DB details keys: ['id', 'original_id', 'name', 'father_name', 'dob', 'id_type', 'embedding', 'face_image']
+[2026-04-28 12:43:23,500: INFO: live_video_verification]:   - id: 4ca121ee680a5e2be0c0a33e53d11066e6c446c3e97aabd55385d49ff075171a
+[2026-04-28 12:43:23,500: INFO: live_video_verification]:   - original_id: IWRPD8134D
+[2026-04-28 12:43:23,500: INFO: live_video_verification]:   - name: Suyash Milind Dustakar
+[2026-04-28 12:43:23,500: INFO: live_video_verification]:   - father_name: Suyash Milind Dustakar
+[2026-04-28 12:43:23,501: INFO: live_video_verification]:   - dob: 2005-04-04
+[2026-04-28 12:43:23,501: INFO: live_video_verification]:   - id_type: PAN
+[2026-04-28 12:43:23,501: INFO: live_video_verification]:   - embedding: [-0.482215017080307, 0.1518474519252777, -0.962512731552124, -0.27665501832962036, 0.22394444048404694, 0.7332682609558105, 0.3275148868560791, 0.10438269376754761, 0.3016706705093384, 1.2091736793518066, 0.2360072135925293, -0.6187236905097961, -0.6693780422210693, -0.9429832696914673, 0.41195711493492126, -1.554841160774231, 0.8153247833251953, -0.5071268081665039, -0.18883973360061646, -1.327223777770996, 0.6907494068145752, -0.44466400146484375, -0.09667286276817322, -0.2369631826877594, 0.27009227871894836, -0.42287757992744446, 0.26844286918640137, -1.0513598918914795, -0.92320716381073, 0.7156690359115601, 0.40376368165016174, 0.3785589337348938, 0.8318359851837158, -0.757585346698761, 1.0153982639312744, -0.06744426488876343, 1.2631181478500366, -1.7476481199264526, 0.8342809677124023, -2.080552816390991, 0.0390743613243103, 1.5065771341323853, 0.35105863213539124, 1.0252403020858765, 0.6822832226753235, 0.15045326948165894, -0.08774583041667938, -1.1810730695724487, -0.2613673508167267, 0.9986025094985962, 0.21169523894786835, 0.10426008701324463, -0.6205630302429199, -2.4557363986968994, 0.021091239526867867, 0.5980624556541443, 0.4654269814491272, -0.5136964917182922, 0.6119744181632996, -2.1146583557128906, 0.49562907218933105, -0.6910644769668579, 0.8895107507705688, -0.06982220709323883, 0.23361247777938843, 0.3771917223930359, -1.5966014862060547, 0.9718901515007019, -0.8209461569786072, -0.8442747592926025, 0.561282753944397, -0.28420910239219666, -0.8992795944213867, -2.4844207763671875, 1.3237015008926392, -0.062047068029642105, -0.08442974090576172, 0.051431313157081604, -1.1892268657684326, 0.5511877536773682, -0.5496391654014587, 1.7717115879058838, -0.9315015077590942, 0.3468720316886902, 0.07051899284124374, -0.1861625462770462, -0.9642719626426697, 0.15447935461997986, -1.9441055059432983, -0.2775983512401581, -0.7060245871543884, 0.7038034796714783, -1.061540961265564, 1.967572569847107, -0.07365579903125763, -0.46362707018852234, -0.43624427914619446, -0.2677454650402069, -1.9041903018951416, 0.5169147849082947, -0.014136986806988716, -0.47403356432914734, 0.1908891201019287, -1.6449918746948242, -2.065642833709717, -0.5922157764434814, -0.7150271534919739, -0.5577812194824219, -0.03310761600732803, 1.1310539245605469, -0.9617931842803955, -0.33815908432006836, 1.3028252124786377, 0.7786398530006409, 0.08932856470346451, 0.7410273551940918, 0.5174551010131836, -1.4535160064697266, -0.24522337317466736, 2.1216893196105957, 0.15976785123348236, -0.9399290084838867, 1.674363613128662, 0.08924558013677597, -0.40405625104904175, -1.5268949270248413, 0.9275854825973511, 0.33151182532310486]
+[2026-04-28 12:43:23,502: INFO: live_video_verification]:   - face_image: <class 'bytes'> (len=19587)
+[2026-04-28 12:43:23,502: INFO: live_video_verification]: ================================================================================
+[2026-04-28 12:43:24,455: INFO: live_video_verification]: Camera rejected 3840x2160, got 1280x720
+[2026-04-28 12:43:24,487: INFO: live_video_verification]: Camera rejected 2560x1440, got 1280x720
+[2026-04-28 12:43:24,520: INFO: live_video_verification]: Camera rejected 1920x1080, got 1280x720
+[2026-04-28 12:43:24,545: INFO: live_video_verification]: Camera accepted resolution: 1280x720
+[2026-04-28 12:43:26,043: INFO: live_video_verification]: Face detected - starting stabilization wait
+[2026-04-28 12:43:29,617: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:30,062: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:31,052: INFO: live_video_verification]: Face comparison - Distance: 0.830, Threshold: 0.680, Similarity: 53.1%
+[2026-04-28 12:43:31,052: INFO: live_video_verification]: NO MATCH! Distance 0.830 > Threshold 0.680
+[2026-04-28 12:43:31,056: INFO: live_video_verification]: Failed before reaching 1/3 (match: 53.1%)
+[2026-04-28 12:43:32,139: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:32,478: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:33,305: INFO: live_video_verification]: Face comparison - Distance: 0.831, Threshold: 0.680, Similarity: 53.1%
+[2026-04-28 12:43:33,305: INFO: live_video_verification]: NO MATCH! Distance 0.831 > Threshold 0.680
+[2026-04-28 12:43:33,308: INFO: live_video_verification]: Failed before reaching 1/3 (match: 53.1%)
+[2026-04-28 12:43:34,269: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:34,618: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:35,455: INFO: live_video_verification]: Face comparison - Distance: 0.834, Threshold: 0.680, Similarity: 52.8%
+[2026-04-28 12:43:35,456: INFO: live_video_verification]: NO MATCH! Distance 0.834 > Threshold 0.680
+[2026-04-28 12:43:35,459: INFO: live_video_verification]: Failed before reaching 1/3 (match: 52.8%)
+[2026-04-28 12:43:36,471: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:36,824: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:37,666: INFO: live_video_verification]: Face comparison - Distance: 0.837, Threshold: 0.680, Similarity: 52.6%
+[2026-04-28 12:43:37,667: INFO: live_video_verification]: NO MATCH! Distance 0.837 > Threshold 0.680
+[2026-04-28 12:43:37,670: INFO: live_video_verification]: Failed before reaching 1/3 (match: 52.6%)
+[2026-04-28 12:43:38,960: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:39,325: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:40,175: INFO: live_video_verification]: Face comparison - Distance: 0.767, Threshold: 0.680, Similarity: 58.1%
+[2026-04-28 12:43:40,176: INFO: live_video_verification]: NO MATCH! Distance 0.767 > Threshold 0.680
+[2026-04-28 12:43:40,177: INFO: live_video_verification]: Failed before reaching 1/3 (match: 58.1%)
+[2026-04-28 12:43:41,181: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:41,581: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:42,417: INFO: live_video_verification]: Face comparison - Distance: 0.800, Threshold: 0.680, Similarity: 55.5%
+[2026-04-28 12:43:42,417: INFO: live_video_verification]: NO MATCH! Distance 0.800 > Threshold 0.680
+[2026-04-28 12:43:42,419: INFO: live_video_verification]: Failed before reaching 1/3 (match: 55.5%)
+[2026-04-28 12:43:43,471: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:43,850: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:44,698: INFO: live_video_verification]: Face comparison - Distance: 0.754, Threshold: 0.680, Similarity: 59.1%
+[2026-04-28 12:43:44,698: INFO: live_video_verification]: NO MATCH! Distance 0.754 > Threshold 0.680
+[2026-04-28 12:43:44,699: INFO: live_video_verification]: Failed before reaching 1/3 (match: 59.1%)
+[2026-04-28 12:43:45,765: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:46,198: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:47,081: INFO: live_video_verification]: Face comparison - Distance: 0.826, Threshold: 0.680, Similarity: 53.5%
+[2026-04-28 12:43:47,081: INFO: live_video_verification]: NO MATCH! Distance 0.826 > Threshold 0.680
+[2026-04-28 12:43:47,084: INFO: live_video_verification]: Failed before reaching 1/3 (match: 53.5%)
+[2026-04-28 12:43:48,168: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:48,591: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:49,505: INFO: live_video_verification]: Face comparison - Distance: 0.766, Threshold: 0.680, Similarity: 58.2%
+[2026-04-28 12:43:49,506: INFO: live_video_verification]: NO MATCH! Distance 0.766 > Threshold 0.680
+[2026-04-28 12:43:49,508: INFO: live_video_verification]: Failed before reaching 1/3 (match: 58.2%)
+[2026-04-28 12:43:50,510: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:50,951: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:51,845: INFO: live_video_verification]: Face comparison - Distance: 0.849, Threshold: 0.680, Similarity: 51.6%
+[2026-04-28 12:43:51,845: INFO: live_video_verification]: NO MATCH! Distance 0.849 > Threshold 0.680
+[2026-04-28 12:43:51,849: INFO: live_video_verification]: Failed before reaching 1/3 (match: 51.6%)
+[2026-04-28 12:43:52,910: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:53,358: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:54,258: INFO: live_video_verification]: Face comparison - Distance: 0.866, Threshold: 0.680, Similarity: 50.2%
+[2026-04-28 12:43:54,258: INFO: live_video_verification]: NO MATCH! Distance 0.866 > Threshold 0.680
+[2026-04-28 12:43:54,261: INFO: live_video_verification]: Failed before reaching 1/3 (match: 50.2%)
+[2026-04-28 12:43:55,313: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:55,725: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:56,641: INFO: live_video_verification]: Face comparison - Distance: 0.856, Threshold: 0.680, Similarity: 51.0%
+[2026-04-28 12:43:56,641: INFO: live_video_verification]: NO MATCH! Distance 0.856 > Threshold 0.680
+[2026-04-28 12:43:56,645: INFO: live_video_verification]: Failed before reaching 1/3 (match: 51.0%)
+[2026-04-28 12:43:57,743: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:43:58,191: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:43:59,117: INFO: live_video_verification]: Face comparison - Distance: 0.872, Threshold: 0.680, Similarity: 49.8%
+[2026-04-28 12:43:59,118: INFO: live_video_verification]: NO MATCH! Distance 0.872 > Threshold 0.680
+[2026-04-28 12:43:59,123: INFO: live_video_verification]: Failed before reaching 1/3 (match: 49.8%)
+[2026-04-28 12:44:00,177: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:00,636: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:01,557: INFO: live_video_verification]: Face comparison - Distance: 0.840, Threshold: 0.680, Similarity: 52.3%
+[2026-04-28 12:44:01,557: INFO: live_video_verification]: NO MATCH! Distance 0.840 > Threshold 0.680
+[2026-04-28 12:44:01,559: INFO: live_video_verification]: Failed before reaching 1/3 (match: 52.3%)
+[2026-04-28 12:44:02,594: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:03,019: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:03,913: INFO: live_video_verification]: Face comparison - Distance: 0.849, Threshold: 0.680, Similarity: 51.6%
+[2026-04-28 12:44:03,913: INFO: live_video_verification]: NO MATCH! Distance 0.849 > Threshold 0.680
+[2026-04-28 12:44:03,916: INFO: live_video_verification]: Failed before reaching 1/3 (match: 51.6%)
+[2026-04-28 12:44:05,167: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:05,616: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:06,560: INFO: live_video_verification]: Face comparison - Distance: 0.829, Threshold: 0.680, Similarity: 53.2%
+[2026-04-28 12:44:06,560: INFO: live_video_verification]: NO MATCH! Distance 0.829 > Threshold 0.680
+[2026-04-28 12:44:06,562: INFO: live_video_verification]: Failed before reaching 1/3 (match: 53.2%)
+[2026-04-28 12:44:07,630: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:08,153: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:09,086: INFO: live_video_verification]: Face comparison - Distance: 0.854, Threshold: 0.680, Similarity: 51.2%
+[2026-04-28 12:44:09,087: INFO: live_video_verification]: NO MATCH! Distance 0.854 > Threshold 0.680
+[2026-04-28 12:44:09,090: INFO: live_video_verification]: Failed before reaching 1/3 (match: 51.2%)
+[2026-04-28 12:44:10,226: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:10,707: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:11,625: INFO: live_video_verification]: Face comparison - Distance: 0.773, Threshold: 0.680, Similarity: 57.6%
+[2026-04-28 12:44:11,625: INFO: live_video_verification]: NO MATCH! Distance 0.773 > Threshold 0.680
+[2026-04-28 12:44:11,627: INFO: live_video_verification]: Failed before reaching 1/3 (match: 57.6%)
+[2026-04-28 12:44:12,720: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:13,162: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:14,076: INFO: live_video_verification]: Face comparison - Distance: 0.713, Threshold: 0.680, Similarity: 62.4%
+[2026-04-28 12:44:14,076: INFO: live_video_verification]: NO MATCH! Distance 0.713 > Threshold 0.680
+[2026-04-28 12:44:14,078: INFO: live_video_verification]: Failed before reaching 1/3 (match: 62.4%)
+[2026-04-28 12:44:15,207: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:15,692: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:16,617: INFO: live_video_verification]: Face comparison - Distance: 0.656, Threshold: 0.680, Similarity: 66.2%
+[2026-04-28 12:44:16,618: INFO: live_video_verification]: MATCH! DeepFace verified=True, Similarity: 66.2%
+[2026-04-28 12:44:16,619: INFO: live_video_verification]: Verification streak: 1/3
+[2026-04-28 12:44:17,777: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:18,209: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:19,136: INFO: live_video_verification]: Face comparison - Distance: 0.707, Threshold: 0.680, Similarity: 62.9%
+[2026-04-28 12:44:19,136: INFO: live_video_verification]: NO MATCH! Distance 0.707 > Threshold 0.680
+[2026-04-28 12:44:19,138: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 62.9%)
+[2026-04-28 12:44:20,305: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:20,709: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:21,629: INFO: live_video_verification]: Face comparison - Distance: 0.687, Threshold: 0.680, Similarity: 64.4%
+[2026-04-28 12:44:21,630: INFO: live_video_verification]: NO MATCH! Distance 0.687 > Threshold 0.680
+[2026-04-28 12:44:21,632: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 64.4%)
+[2026-04-28 12:44:22,705: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:23,137: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:24,070: INFO: live_video_verification]: Face comparison - Distance: 0.865, Threshold: 0.680, Similarity: 50.4%
+[2026-04-28 12:44:24,070: INFO: live_video_verification]: NO MATCH! Distance 0.865 > Threshold 0.680
+[2026-04-28 12:44:24,074: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 50.4%)
+[2026-04-28 12:44:25,176: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:25,588: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:26,521: INFO: live_video_verification]: Face comparison - Distance: 0.685, Threshold: 0.680, Similarity: 64.6%
+[2026-04-28 12:44:26,521: INFO: live_video_verification]: NO MATCH! Distance 0.685 > Threshold 0.680
+[2026-04-28 12:44:26,525: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 64.6%)
+[2026-04-28 12:44:27,627: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:28,121: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:29,082: INFO: live_video_verification]: Face comparison - Distance: 0.711, Threshold: 0.680, Similarity: 62.6%
+[2026-04-28 12:44:29,082: INFO: live_video_verification]: NO MATCH! Distance 0.711 > Threshold 0.680
+[2026-04-28 12:44:29,084: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 62.6%)
+[2026-04-28 12:44:30,353: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:30,792: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:31,753: INFO: live_video_verification]: Face comparison - Distance: 0.687, Threshold: 0.680, Similarity: 64.4%
+[2026-04-28 12:44:31,753: INFO: live_video_verification]: NO MATCH! Distance 0.687 > Threshold 0.680
+[2026-04-28 12:44:31,757: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 64.4%)
+[2026-04-28 12:44:32,880: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:33,309: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:34,233: INFO: live_video_verification]: Face comparison - Distance: 0.761, Threshold: 0.680, Similarity: 58.5%
+[2026-04-28 12:44:34,233: INFO: live_video_verification]: NO MATCH! Distance 0.761 > Threshold 0.680
+[2026-04-28 12:44:34,235: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 58.5%)
+[2026-04-28 12:44:35,402: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:35,837: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:36,819: INFO: live_video_verification]: Face comparison - Distance: 0.861, Threshold: 0.680, Similarity: 50.7%
+[2026-04-28 12:44:36,819: INFO: live_video_verification]: NO MATCH! Distance 0.861 > Threshold 0.680
+[2026-04-28 12:44:36,823: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 50.7%)
+[2026-04-28 12:44:38,150: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:38,717: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:39,814: INFO: live_video_verification]: Face comparison - Distance: 0.709, Threshold: 0.680, Similarity: 62.7%
+[2026-04-28 12:44:39,814: INFO: live_video_verification]: NO MATCH! Distance 0.709 > Threshold 0.680
+[2026-04-28 12:44:39,817: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 62.7%)
+[2026-04-28 12:44:40,922: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:41,308: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:42,263: INFO: live_video_verification]: Face comparison - Distance: 0.844, Threshold: 0.680, Similarity: 52.0%
+[2026-04-28 12:44:42,263: INFO: live_video_verification]: NO MATCH! Distance 0.844 > Threshold 0.680
+[2026-04-28 12:44:42,267: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 52.0%)
+[2026-04-28 12:44:43,396: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:43,692: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:44,648: INFO: live_video_verification]: Face comparison - Distance: 0.840, Threshold: 0.680, Similarity: 52.3%
+[2026-04-28 12:44:44,648: INFO: live_video_verification]: NO MATCH! Distance 0.840 > Threshold 0.680
+[2026-04-28 12:44:44,652: INFO: live_video_verification]: Mismatch but streak 1/3 PROTECTED (match: 52.3%)
+[2026-04-28 12:44:45,796: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:46,167: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:47,097: INFO: live_video_verification]: Face comparison - Distance: 0.637, Threshold: 0.680, Similarity: 67.2%
+[2026-04-28 12:44:47,097: INFO: live_video_verification]: MATCH! DeepFace verified=True, Similarity: 67.2%
+[2026-04-28 12:44:47,099: INFO: live_video_verification]: Verification streak: 2/3
+[2026-04-28 12:44:48,293: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:48,767: INFO: live_video_verification]: Face detected with opencv
+[2026-04-28 12:44:49,712: INFO: live_video_verification]: Face comparison - Distance: 0.484, Threshold: 0.680, Similarity: 75.1%
+[2026-04-28 12:44:49,712: INFO: live_video_verification]: MATCH! DeepFace verified=True, Similarity: 75.1%
+[2026-04-28 12:44:49,714: INFO: live_video_verification]: Verification streak: 3/3
+[2026-04-28 12:44:52,165: INFO: live_video_verification]: Face image loaded: (224, 224, 3)
+[2026-04-28 12:44:52,166: INFO: sql_connection]: Face encoded to JPEG for verified table: 19562 bytes
+[2026-04-28 12:44:52,177: INFO: sql_connection]: Verified record inserted into MySQL: Suyash Milind Dustakar (PAN: IWRPD8134D)
+[2026-04-28 12:44:52,177: INFO: live_video_verification]: Verified record saved: Suyash Milind Dustakar (PAN: IWRPD8134D)
+[2026-04-28 12:45:17,284: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:45:17,286: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:45:17,289: INFO: app]: Custom theme applied.
+[2026-04-28 12:46:57,852: INFO: app]: Configuration loaded successfully
+[2026-04-28 12:46:57,854: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 12:46:57,855: INFO: app]: Custom theme applied.
+[2026-04-28 20:58:22,648: INFO: app]: Configuration loaded successfully
+[2026-04-28 20:58:22,658: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 20:58:22,659: INFO: app]: Custom theme applied.
+[2026-04-28 21:12:36,634: INFO: app]: Configuration loaded successfully
+[2026-04-28 21:12:36,648: INFO: app]: Page layout set to ultra-wide.
+[2026-04-28 21:12:36,650: INFO: app]: Custom theme applied.

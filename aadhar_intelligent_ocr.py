@@ -190,7 +190,7 @@ def parse_aadhar_card_intelligent(image: np.ndarray) -> Dict[str, Optional[str]]
     center_x = width / 2
     
     exclude_keywords = ['government', 'india', 'aadhar', 'uidai', 'male', 'female', 
-                        'dob', 'date of birth', 'यूआईडीएआई', 'आधार', 'vid']
+                        'dob', 'date of birth', 'यूआईडीएआई', 'आधार', 'vid', 'signature', 'sign']
     
     for text, conf, bbox, source in text_elements:
         y_percent = (bbox['y'] / height) * 100

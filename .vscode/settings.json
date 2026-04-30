@@ -1,0 +1,46 @@
+{
+    "python.defaultInterpreterPath": "/Users/apple/Downloads/ekyc sssss/.venv/bin/python",
+    "python.pythonPath": "/Users/apple/Downloads/ekyc sssss/.venv/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ],
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.logLevel": "Error"
+}
+{
+  "files.exclude": {
+    "readme.md": true,
+    "README.md": true,
+    "PROJECT_TECH_STACK.md": true,
+    "PROJECT_TECH_STACK_CORRECTED.md": true,
+    "QUICK_DATABASE_SETUP.txt": true,
+    "debug_pan_ocr.txt": true,
+    "ocr_engine_backup.py": true,
+    "repair_tables.sql": true,
+    "clean_database_setup.sql": true,
+    "database_setup.sql": true,
+    "create_tables.sql": true
+  },
+  "search.exclude": {
+    "readme.md": true,
+    "README.md": true,
+    "PROJECT_TECH_STACK.md": true,
+    "PROJECT_TECH_STACK_CORRECTED.md": true,
+    "QUICK_DATABASE_SETUP.txt": true,
+    "debug_pan_ocr.txt": true,
+    "ocr_engine_backup.py": true,
+    "repair_tables.sql": true,
+    "clean_database_setup.sql": true,
+    "database_setup.sql": true,
+    "create_tables.sql": true
+  },
+  "markdownlint.config": {
+    "MD022": false,
+    "MD032": false,
+    "MD031": false,
+    "MD040": false,
+    "MD041": false,
+    "MD033": false
+  }
+}

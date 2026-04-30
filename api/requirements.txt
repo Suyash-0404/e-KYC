@@ -1,0 +1,7 @@
+Flask==3.0.3
+flask-cors==4.0.0
+flask-jwt-extended==4.5.3
+python-dotenv==1.0.1
+mysql-connector-python==8.2.0
+Pillow==10.2.0
+numpy==1.24.3
