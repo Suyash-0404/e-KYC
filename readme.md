@@ -113,7 +113,3 @@ streamlit run app.py
 - If OCR is weak, try a clearer image with better lighting.
 - If face verification fails, use a front-facing photo with good brightness.
 - If the database does not connect, check the values in `config.yaml` and confirm MySQL is running.
-
-## Short Presentation Summary
-
-This project automates KYC by combining face verification, OCR, and database checks. It reduces manual work, prevents duplicate registrations, and stores verified user data in a structured way.
