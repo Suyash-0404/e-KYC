@@ -1,6 +1,7 @@
 # E-KYC System
 
-This project is a simple electronic KYC web app built with Python. It checks an ID card image and a face image, verifies whether both faces match, reads the text from the ID card, and stores the data in a database if the person is not already registered.
+Our E-KYC Project is a Python-based electronic Know Your Customer workflow that lets users upload an ID document(PAN Card/Aadhar Card) and face image, verify the document-to-face match, extract text using OCR, and store the result in a database for review and follow-up verification.
+
 
 ## What the project does
 
@@ -10,7 +11,7 @@ This project is a simple electronic KYC web app built with Python. It checks an 
 4. If the faces match, OCR is used to read the ID card text.
 5. The extracted information is cleaned and checked for duplicates.
 6. If the record is new, it is saved in MySQL, or SQLite is used as a fallback.
-7. The app can then move to live video verification.
+7. The app can then move to live video verification Phase.
 
 ## Tech Stack
 
@@ -48,15 +49,15 @@ This project is a simple electronic KYC web app built with Python. It checks an 
 - `assets/`: demo media and visuals.
 - `data/01_raw_data/`: sample input images.
 - `data/02_intermediate_data/`: cropped and processed images.
-- `data/models/`: model and cascade files.
+- 
 - `logs/`: runtime logs.
-- `tests/`: extra validation scripts.
+- 
 
 ## Requirements
 
 - Python 3.9 or newer.
 - MySQL server if you want to use the main database.
-- A working camera for live verification.
+- A working camera (Laptop Webcam, Wireless IP Webcam, Wired Camera Connection) for live verification.
 
 ## Setup
 
@@ -92,9 +93,19 @@ database:
 
 ## Run the App
 
+### Streamlit UI
+
 ```bash
 streamlit run app.py
 ```
+
+### Flask API
+
+```bash
+cd api
+python app.py
+```
+
 
 ## Database Notes
 
@@ -102,42 +113,12 @@ streamlit run app.py
 - Aadhaar numbers are stored directly because they are already unique IDs.
 - If MySQL is unavailable, the app falls back to SQLite in `data/ekyc_local.db`.
 
-## Free Live Deployment (Render / Vercel)
 
-This repository now includes a production WSGI entrypoint so the Flask API can be deployed for free on Render or Vercel.
 
-### Render (recommended)
 
-1. Push the code to GitHub.
-2. Create a new Web Service on Render.
-3. Use the build command:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Use the start command:
-
-```bash
-gunicorn --bind 0.0.0.0:$PORT wsgi:app
-```
-
-5. Add a `JWT_SECRET_KEY` environment variable.
-
-### Vercel
-
-A lightweight Python wrapper is included for Vercel deployment with `api/index.py` and `vercel.json`.
-
-> Render is the best free option for this Flask-based API because it supports long-running Python services more reliably.
-
-## Important Notes
-
-- Do not commit `config.yaml` if it contains real credentials.
-- Keep `logs/` and `data/ekyc_local.db` out of GitHub.
-- The project is designed for demo and academic use.
 
 ## Troubleshooting
 
 - If OCR is weak, try a clearer image with better lighting.
-- If face verification fails, use a front-facing photo with good brightness.
+- If face verification fails, upload a front-facing photo with good brightness and clarity.
 - If the database does not connect, check the values in `config.yaml` and confirm MySQL is running.
