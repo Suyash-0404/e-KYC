@@ -102,6 +102,34 @@ streamlit run app.py
 - Aadhaar numbers are stored directly because they are already unique IDs.
 - If MySQL is unavailable, the app falls back to SQLite in `data/ekyc_local.db`.
 
+## Free Live Deployment (Render / Vercel)
+
+This repository now includes a production WSGI entrypoint so the Flask API can be deployed for free on Render or Vercel.
+
+### Render (recommended)
+
+1. Push the code to GitHub.
+2. Create a new Web Service on Render.
+3. Use the build command:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Use the start command:
+
+```bash
+gunicorn --bind 0.0.0.0:$PORT wsgi:app
+```
+
+5. Add a `JWT_SECRET_KEY` environment variable.
+
+### Vercel
+
+A lightweight Python wrapper is included for Vercel deployment with `api/index.py` and `vercel.json`.
+
+> Render is the best free option for this Flask-based API because it supports long-running Python services more reliably.
+
 ## Important Notes
 
 - Do not commit `config.yaml` if it contains real credentials.
