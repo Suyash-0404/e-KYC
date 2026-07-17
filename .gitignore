@@ -1,1 +1,5 @@
-__pycache__/\n*.pyc\n.venv/\n.env\nlogs/\n*.db\n*.log\n.pytest_cache/\n.coverage\ndata/02_intermediate_data/
+__pycache__/\n*.py[cod]\n.venv/\n.env\nlogs/\n*.db\n*.log\n.pytest_cache/\n.coverage\ndata/02_intermediate_data/
+.DS_Store
+**/.DS_Store
+.vscode/
+**/.vscode/
